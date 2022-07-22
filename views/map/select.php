@@ -59,11 +59,32 @@ $axisWidth = 75 * $model->size + 25;
           width: <?= $axisWidth?>px
     }
 </style> -->
-<div class="map-view">
+<div class="map-view is-small">
     <div class="map-view__header">
-        <h1>Customer Belief<br>Mapping Tool</h1>
+        <h1>To begin with the Tool please fill in <br>necessary information below:</h1>
+        <div class="map-view__text">
+
+            <p>1.  Customer Name - Please type in or choose initials of each payer</p>
+
+            <p>
+                Answer two key customer questions:
+                <br>2.  Current Belief – Use dropdown menu to choose appropriate Belief
+                <br>3.  Current Practice - Use dropdown menu to choose appropriate Practice
+            </p>
+            <p>
+                The tool automatically classifies your payer's starting position on the Tool.
+                <br>A highlighted box will appear on the map to indicate current chosen position for selected Customer Name.
+                <br>4.  Explore the suggested Belief/Practice shifts for current customer and the approved messages to for the next Shift by clicking ‘Submit’
+            </p>
+            <p>The limitations of current therapies</p>
+            <p>Current therapies are associated with substantial toxicity, which contributes to morbidity and mortality</p>
+            <p>
+                Current therapies are associated with substantial toxicity, due to non-specific effects, causing adverse events6  
+                <br>Over 50% of mortalities in the disease may be due to treatment related adverse events7 
+            </p>
+                
+        </div>
     </div>
-    
     <div class="map-form">
         <div class="map-form__grid">
             <div class="map-form__main">
@@ -107,8 +128,8 @@ $axisWidth = 75 * $model->size + 25;
                 <?php ActiveForm::end(); ?>
             </div>
             <div class="map-preview map-form__aside">
-            <h2 class="map-preview__title">customer position<br>map</h2>
-            <div class="map-preview__inner">
+            <!-- <h2 class="map-preview__title">customer position<br>map</h2> -->
+            <div class="map-preview__inner is-new">
                 <?php             
                     $rows = array_slice(['A', 'B', 'C', 'D', 'E'], 0, $model->size);
                     $columns = array_slice(['5', '4', '3', '2', '1'], 5 - $model->size, $model->size);
@@ -144,6 +165,5 @@ $axisWidth = 75 * $model->size + 25;
             </div>
         </div>        
     </div>
-        
-
+    <div class="map-info"><span>  INFORMATION:</span> Some Belief/Practice combinations are not realistic – if you see "N/A" please different combination of chosen answers.</div>
 </div>
