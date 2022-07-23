@@ -83,7 +83,7 @@ use kartik\icons\Icon;
         </div>
     </div>
 
-    <!-- <div class="jumbotron text-center bg-transparent">
+    <div class="jumbotron text-center bg-transparent">
         <h1 class="display-4"><?= Yii::$app->name ?></h1>
         <hr>
     </div>
@@ -117,5 +117,5 @@ use kartik\icons\Icon;
             <?php } ?>
         </div>
 
-    </div>  -->
+    </div> 
 </div>

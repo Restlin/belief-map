@@ -69,7 +69,209 @@ $axisWidth = 65 * $map->size;
     } */
 
 </style>
-<div class="cell-view">  
+
+<div class="tool">
+    <div class="tool__container">
+        <div class="tool__header">
+            <div class="tool__maps">
+                <div class="tool__map">
+                    <div class="map-preview__title">Suggested next shift</div>
+                    <div class="map-preview__inner is-new is-big">
+                        <div class="row">
+                            <div class="cell is-big" style="background: #fff;box-shadow: 6px 5px 18px rgba(0, 0, 0, 0.16);color: #adbd00;">a3</div>
+                            <div class="cell is-big" style="background: #C3D502;">a2
+                                
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="cell is-big" style="background: #7f8daf;">a3<div class="arrow-select arrow-right-top">
+                                    <img src="/web/images/at1.svg" alt="">
+                                </div></div>
+                            <div class="cell is-big" style="background: #fff;box-shadow: 6px 5px 18px rgba(0, 0, 0, 0.16);color: #adbd00;">a2
+                                
+                            </div>
+                        </div>
+
+                        <parent class="vertical">
+                            <span class="legend">Current belief</span>
+                            <div class="line">
+                                <div class="bullet"></div>
+                            </div>
+                        </parent>
+                        <parent class="horizontal">
+                            <span class="legend">Current practice
+                            <div class="line">
+                                <div class="bullet"></div>
+                            </div>
+                        </parent>
+                    </div>
+                </div>
+                <div class="tool__map">
+                    <div class="map-preview__title">Overall Tool Perspective</div>
+                    <div class="map-preview__inner is-new">
+                        <div class="row is-thin">
+                            <div class="cell" style="background: #C3D502;">a3</div>
+                            <div class="cell" style="background: #C3D502;">a2
+                                <div class="logbook-count">3</div>
+                            </div>
+                            <div class="cell" style="background: #C3D502;">a1</div>
+                        </div>
+                        <div class="row is-thin">
+                            <div class="cell" style="background: #C3D502;">a3</div>
+                            <div class="cell" style="background: #C3D502;">a2<div class="arrow-select arrow-right-top">
+                                    <img src="/web/images/at1.svg" alt="">
+                                </div></div>
+                            <div class="cell" style="background: #C3D502;">a1</div>
+                        </div>
+                        <div class="row is-thin">
+                            <div class="cell" style="background: #C3D502;">
+                                a3
+                                <div class="arrow-select arrow-right-top">
+                                    <img src="/web/images/at1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="cell" style="background: #C3D502;">a2</div>
+                            <div class="cell" style="background: #C3D502;">a1</div>
+                        </div>
+                        <div class="row is-thin">
+                            <div class="cell" style="background-color: #7f8daf;">
+                                a3
+
+                                <div class="arrow-select arrow-top">
+                                    <img src="/web/images/at.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="cell" style="background: #C3D502;">a2</div>
+                            <div class="cell" style="background: #C3D502;">a1</div>
+                        </div>
+
+                        <parent class="vertical">
+                            <span class="legend">Current belief</span>
+                            <div class="line">
+                                <div class="bullet"></div>
+                            </div>
+                        </parent>
+                        <parent class="horizontal">
+                            <span class="legend">Current practice
+                            <div class="line">
+                                <div class="bullet"></div>
+                            </div>
+                        </parent>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tool__body">
+            <div class="tool__tabs">
+                <div class="tool-tabs">
+                    <div class="tool-tabs__grid">
+                        <div class="tool-tabs__col">
+                            <div class="tool-tabs__card" >
+                                <div class="tool-tabs__title">Belief</div>
+                                <div class="tool-tabs__text"style="background-color: #7f8daf;">
+                                    <p>There is no or limited awareness of the disease unmet need or issues with existing SoC</p>
+                                </div>
+                            </div>
+                            <div class="tool-tabs__card" >
+                                <div class="tool-tabs__title">Practice</div>
+                                <div class="tool-tabs__text"style="background-color: #7f8daf;">
+                                    <p>Other therapies, including SoC, are reimbursed for the disease - but not Product X</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tool-tabs__col">
+                            <div class="tool-tabs__label">
+                                Shift to
+                                <img src="/web/images/ar.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="tool-tabs__col">
+                            <div class="tool-tabs__card">
+                                <div class="tool-tabs__title">Next best Belief</div>
+                                <div class="tool-tabs__text">
+                                    <p>The disease is progressive and life-threatening. <br>There are limitations with existing SoC</p>
+                                </div>
+                            </div>
+                            <div class="tool-tabs__card">
+                                <div class="tool-tabs__title">Next best Practice</div>
+                                <div class="tool-tabs__text">
+                                    <p>Other therapies, including SoC, are reimbursed for the disease - but not Product X</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-info tool__info">
+                <div class="tool-info__container">
+                <div class="tool-info__header">
+                    <div class="arguments-steps tool-info__steps">
+                        <div class="arguments-steps__item">
+                            <div class="cell" style="background-color: #0e2f4a;">D3</div>
+                        </div>
+                        <div class="arguments-steps__item">
+                            <div class="cell" style="background-color: #c3d502;">C3</div>
+                        </div>
+                    </div>
+                    <div class="tool-info__title">Core Message Summary</div>
+                </div>
+                <div class="tool-info__body">
+                    <div class="tool-info__scroll scroll-area">
+                        <div class="tool-info__text">
+                            <h2>Unmet need message summary</h2>
+                            <p>The disease is most common in the elderly, with the highest proportion of costs attributed to hospitalisations
+                                <br>•  The disease affects approximately 8% of the adult population in Europe 1
+                                <br>•  It affects as many as 6 % of people > 60 years of age 1</p>
+                            <p>Elderly and frail patients with the disease have an increased risk of earlier death and have an impaired quality of life (QoL) 3,4   
+                            <br>•  Patients with the disease over 60 years old were 40% more die during the median follow up time of 3 years than those 	      without disease 3  
+                            <br>•  Patients with the disease had a decreased adjusted HRQoL score of 4.7, reflecting a poorer QoL4</p>
+                            <p>European guidelines recommend screening for patients with the disease5</p>
+                            <p>The European guidelines state ‘’ diagnostics tests should be used for initial assessment of a patient with newly diagnosed disease in order to evaluate their suitability for particular therapies’’ 5</p>
+                            <p>The limitations of current therapies</p>
+                            <p>Current therapies are associated with substantial toxicity, which contributes to morbidity and mortality</p>
+                            <p>
+                            Current therapies are associated with substantial toxicity, due to non-specific effects, causing adverse events6  
+                            <br>Over 50% of mortalities in the disease may be due to treatment related adverse events7 
+                            </p>
+
+                        </div>
+                        <div class="tool-info__actions">
+                            <a href="#" class="btn btn-info tool-info__button" style="background-color: #7f8daf; border:0;">Executive Summary</a>
+                            <a href="#" class="btn btn-info tool-info__button" style="background-color: #a2bdc1; border:0;width: 190px;">Detailed Presentation</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tool-info__footer">
+                    <div class="arguments-steps tool-info__steps is-large">
+                            <div class="arguments-steps__item">
+                                <div class="cell" style="background-color: #7f8daf;">D3</div>
+                            </div>
+                            <div class="arguments-steps__line" style="background:#c3d502;"></div>
+                            <div class="arguments-steps__item">
+                                <div class="cell" style="background-color: #c3d502;">C3</div>
+                            </div>
+                        </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tool__footer">
+            <div class="tool__actions">
+                <a href="#" class="btn btn-info tool__button" style="background-color: #c3d502; border:0;">Next customer</a>
+                <a href="#" class="btn btn-info tool__button" style="background-color: #a2bdc1; border:0;">Finish</a>
+            </div>
+                            
+        </div>
+    </div>
+</div>
+
+<!-- <div class="cell-view">  
     <div class="cell-view__content">
         <div class="row">
             <div class="col-lg-3" style="align-items: center;">
@@ -243,4 +445,4 @@ $axisWidth = 65 * $map->size;
 </div>
 <p>
     &nbsp;
-</p>
+</p> -->
