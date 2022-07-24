@@ -78,7 +78,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $view = !$this->isAdmin() ? 'index_admin' : 'index';
+        $view = $this->isAdmin() ? 'index_admin' : 'index';
         $company = Yii::$app->user->identity->user->company;
 
         return $this->render($view, [
