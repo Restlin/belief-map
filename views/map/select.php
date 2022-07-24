@@ -16,8 +16,9 @@ use kartik\icons\Icon;
 /* @var $isAdmin bool */
 
 $this->title = 'Customer Belief Mapping Tool';
-$this->params['breadcrumbs'][] = ['label' => 'Products', 'url' => ['product/list']];
-$this->params['breadcrumbs'][] = ['label' => $model->product->name, 'url' => ['product/view', 'id' => $model->product->id]];
+$this->title = 'Tool';
+//$this->params['breadcrumbs'][] = ['label' => 'Products', 'url' => ['product/list']];
+//$this->params['breadcrumbs'][] = ['label' => $model->product->name, 'url' => ['product/view', 'id' => $model->product->id]];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 
@@ -130,19 +131,16 @@ $axisWidth = 75 * $model->size + 25;
             <div class="map-preview map-form__aside">
             <!-- <h2 class="map-preview__title">customer position<br>map</h2> -->
             <div class="map-preview__inner is-new">
-                <?php             
-                    $rows = array_slice(['A', 'B', 'C', 'D', 'E'], 0, $model->size);
-                    $columns = array_slice(['5', '4', '3', '2', '1'], 5 - $model->size, $model->size);
-                    $wide = 7 - $model->size;
+                <?php
+                    $countRows = count($model->answers1);
+                    $countColumns = count($model->answers2);
+                    $rows = array_slice(['A', 'B', 'C', 'D', 'E'], 0, $countRows);
+                    $columns = array_slice(['5', '4', '3', '2', '1'], 5 - $countColumns, $countColumns);
                     foreach($rows as $row) {
                         echo Html::beginTag('div', ['class' => 'row']);
                         foreach($columns as $column) {
                             $arrow = '';
                             $cellCode = $row.$column;
-                            //disable arrows 17.05
-                            /*if(in_array($cellCode, ['B2','C3','D4', 'E5'])) {
-                                $arrow = Html::tag('div', Icon::show('arrow-right'), ['class' => "arrow-select arrow-right-top"]);
-                            }*/
                             $color = $colors[$cellCode];
                             echo Html::tag("div", $cellCode.$arrow, ['class' => "cell", 'style' => "background: $color", 'data-code' => $cellCode]), "\n";
                         }
@@ -150,13 +148,13 @@ $axisWidth = 75 * $model->size + 25;
                     }        
                 ?>
                     <parent class="vertical">
-                        <span class="legend">&nbsp;Payer&nbsp;belief&nbsp;</span>
+                        <span class="legend">&nbsp;Current&nbsp;belief&nbsp;</span>
                         <div class="line">
                             <div class="bullet"></div>
                         </div>
                     </parent>
                     <parent class="horizontal">
-                        <span class="legend">&nbsp;Payer&nbsp;Practice&nbsp;</span>
+                        <span class="legend">&nbsp;Current&nbsp;Practice&nbsp;</span>
                         <div class="line">
                             <div class="bullet"></div>
                         </div>

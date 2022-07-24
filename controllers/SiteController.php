@@ -40,7 +40,7 @@ class SiteController extends Controller
                 'only' => ['logout', 'index'],
                 'rules' => [
                     [
-                        'actions' => ['logout', 'index'],
+                        'actions' => ['logout', 'index', 'use', 'arguments', 'resources'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -77,18 +77,29 @@ class SiteController extends Controller
      * @return string
      */
     public function actionIndex()
-    {        
-        if(!$this->isAdmin()) {
-            $this->redirect(['product/list']);
-        }
+    {
+        $view = !$this->isAdmin() ? 'index_admin' : 'index';
         $company = Yii::$app->user->identity->user->company;
 
-        return $this->render('index', [
+        return $this->render($view, [
             'isAdmin' => $this->isAdmin(),
             'isManager' => $this->isManager(),
             'company' => $company
         ]);
     }
+
+    public function actionUse() {
+        return $this->render('use', ['mapId' => 1]);
+    }
+    
+    public function actionArguments() {
+        return $this->render('arguments');
+    }
+
+    public function actionResources($page = 1) {
+        $view = $page == 1  ? 'resources' : 'other';
+        return $this->render($view);
+    }    
 
     /**
      * Displays homepage.

@@ -14,9 +14,9 @@ use app\models\Cell;
 /* @var $cellIds array */
 /* @var $cellCounts array */
 
-$this->title = "Scatter plot";
-$this->params['breadcrumbs'][] = ['label' => 'Products', 'url' => ['product/list']];
-$this->params['breadcrumbs'][] = ['label' => $model->product->name, 'url' => ['product/view', 'id' => $model->product->id]];
+$this->title = "Progress Dashboard";
+//$this->params['breadcrumbs'][] = ['label' => 'Products', 'url' => ['product/list']];
+//$this->params['breadcrumbs'][] = ['label' => $model->product->name, 'url' => ['product/view', 'id' => $model->product->id]];
 $this->params['breadcrumbs'][] = $this->title;
 
 $datesRaw = array_keys(reset($cellCounts));
@@ -42,9 +42,10 @@ $this->registerJs($js);
                 <h3 class="map-preview__title">customer position<br>map</h3>
                 <div class="map-preview__inner">
                 <?php
-                    $rows = array_slice(['A', 'B', 'C', 'D', 'E'], 0, $model->size);
-                    $columns = array_slice(['5', '4', '3', '2', '1'], 5 - $model->size, $model->size);
-                    $wide = 7 - $model->size;
+                    $countRows = count($model->answers1);
+                    $countColumns = count($model->answers2);
+                    $rows = array_slice(['A', 'B', 'C', 'D', 'E'], 0, $countRows);
+                    $columns = array_slice(['5', '4', '3', '2', '1'], 5 - $countColumns, $countColumns);                    
                     foreach($rows as $row) {
                         echo Html::beginTag('div', ['class' => 'row']);
                         foreach($columns as $column) {
@@ -69,13 +70,13 @@ $this->registerJs($js);
                     }
                     ?>
                     <parent class="vertical">
-                        <div class="legend">&nbsp;Payer&nbsp;belief&nbsp;</div>
+                        <div class="legend">&nbsp;Current&nbsp;belief&nbsp;</div>
                         <div class="line">
                             <div class="bullet"></div>
                         </div>
                     </parent>
                     <parent class="horizontal">
-                        <span class="legend">&nbsp;Payer&nbsp;Practice&nbsp;</span>
+                        <span class="legend">&nbsp;Current&nbsp;Practice&nbsp;</span>
                         <div class="line">
                             <div class="bullet"></div>
                         </div>

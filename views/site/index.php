@@ -6,23 +6,10 @@
 /* @var $company \app\models\Company */
 
 use yii\helpers\Html;
-use kartik\icons\Icon;
-// use Yii;
-//cabinet-filing
-//
-?>
-<style>
-    .menu-block {
-        background: <?=$company->color ?> !important;
-    }
-</style>
-<div class="site-index">
 
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/web/index.php">Home</a></li>
-        </ol>
-    </nav>  
+$this->params['breadcrumbs'][] = 'home';
+?>
+<div class="site-index">    
     
 
     <div class="promo">
@@ -62,7 +49,7 @@ use kartik\icons\Icon;
                 <div class="promo__info">
                     <h2 class="promo__heading">Belief Map Framework</h2>
                     <div class="promo__image">
-                        <img src="/web/images/promoim.png" alt="" class="promo__img">
+                        <?= Html::img('images/promoim.png', ['class' => "promo__img"]) ?>
                     </div>
                 </div>
             </div>
@@ -77,45 +64,10 @@ use kartik\icons\Icon;
                     <p>Information held is stored securely on the our company system and is made available only to those who need it to perform their roles. Information should be deleted when it is no longer required for the purpose of negotiation.</p>
                 </div>
                 <div class="promo__actions">
-                    <a href="#" class="btn btn-info promo__button">start</a>
+                    <?= Html::a('start', ['use'], ['class' => 'btn btn-info promo__button']) ?>                    
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="jumbotron text-center bg-transparent">
-        <h1 class="display-4"><?= Yii::$app->name ?></h1>
-        <hr>
-    </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4 menu-block">
-
-                <h2>&nbsp; <?=Icon::show('briefcase', ['style' => 'float:right;']) ?></h2>
-                <?= Html::a('Products', ['product/list']) ?><br>
-                <?= Html::a('Belief maps', ['map/index']) ?><br>
-                <?= Html::a('Contacts', ['contact/index', 'all' => 1]) ?><br>
-                <?= Html::a('Logbook', ['logbook/index', 'all' => 1]) ?><br>
-                <?php if($isManager) {
-                    echo Html::a('Your company users', ['user/index']), '<br>';
-                } 
-                ?>
-            </div>
-            <?php if($isAdmin) { ?>
-                <div class="col-lg-4 menu-block admin">
-                    <h2>&nbsp; <?=Icon::show('wrench', ['style' => 'float:right;']) ?></h2>
-
-                    <?= Html::a('Products', ['product/index']) ?><br>
-                    <?= Html::a('Belief maps', ['map/index']) ?><br>
-                    <?= Html::a('Companies', ['company/index']) ?><br>
-                    <?= Html::a('Users', ['user/index']) ?><br>
-                    <?= Html::a('All contacts', ['contact/index', 'all' => 1]) ?><br>
-                    <?= Html::a('Pages', ['page/index']) ?><br>
-                </div>                 
-            <?php } ?>
-        </div>
-
-    </div> 
+    </div>    
+    
 </div>

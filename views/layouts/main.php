@@ -44,6 +44,10 @@ if($company) {
     $brandLabel = Html::tag('span', Yii::$app->name, ['style' => "color: $textColor; font-size: 22px;"]);
     $companyImg = Html::img('images/banner.png', ['class' => 'user-img', 'alt' => 'company icon']);        
 }
+
+$mapId = 1;
+$viewUrl = ['cell/view'] + $this->context->actionParams;
+$toolUrl = $this->context->id == 'cell' && $this->context->action->id == 'view' ? $viewUrl :  ['/map/select', 'id' => $mapId];
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -83,9 +87,14 @@ if($company) {
                 'options' => ['style' => "background: $brandColor"],
             ],*/            
 
-            ['label' => 'Home', 'url' => ['/site/index'], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],            
-            ['label' => 'Help', 'url' => ['/site/help'], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
-            ['label' => 'Introduction and Guidance', 'url' => ['/product/introduction', 'id' => $product ? $product->id : $product], 'visible' => $product ? true : false, 'linkOptions' => ['style' => "color: $textColor"]],
+            ['label' => 'Home', 'url' => ['/site/index'], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
+            ['label' => 'How to use this tool', 'url' => ['/site/use'], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
+            ['label' => 'Tool', 'url' => $toolUrl, 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
+            ['label' => 'Arguments', 'url' => ['/site/arguments'], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
+            ['label' => 'Resources', 'url' => ['/site/resources'], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
+            ['label' => 'Progress Dashboard', 'url' => ['/map/report', 'id' => $mapId], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
+            //['label' => 'Help', 'url' => ['/site/help'], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
+            //['label' => 'Introduction and Guidance', 'url' => ['/product/introduction', 'id' => $product ? $product->id : $product], 'visible' => $product ? true : false, 'linkOptions' => ['style' => "color: $textColor"]],
             Yii::$app->user->isGuest ? (
                 ['label' => Icon::show('sign-in-alt'), 'url' => ['/site/login'], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]]
             ) : (
@@ -125,9 +134,7 @@ if($company) {
 </main>
 
 <footer class="footer mt-auto">
-    <div class="container">
-        <!-- <p class="float-left">&copy; My Company <?= date('Y') ?></p>
-        <p class="float-right"><?= Yii::powered() ?></p> -->
+    <div class="container">        
         <div class="copyright">© Copyright 2022. All rights reserved.</div>
     </div>
 </footer>
