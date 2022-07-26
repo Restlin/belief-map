@@ -7,7 +7,7 @@
 
 use yii\helpers\Html;
 
-$this->params['breadcrumbs'][] = 'home';
+$this->params['breadcrumbs'][] = ['label' => null, 'template' => ""];
 ?>
 <div class="site-index">    
     
