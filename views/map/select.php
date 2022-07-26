@@ -29,6 +29,7 @@ $js = "$('#map-question1, #map-question2, #map-contactname').on('change', functi
         let q1 = $('#map-question1').val();
         let q2 = $('#map-question2').val();
         let contact = $('#map-contactname').val();
+        console.log(contact);
         let result = '';
         if(q1 && q2) {
             cell = cellCodes[q1+q2] ? cellCodes[q1+q2] : null;
@@ -48,7 +49,7 @@ $js = "$('#map-question1, #map-question2, #map-contactname').on('change', functi
             result = 'need answers';
             $('#btn-submit').prop('disabled', true);
         }
-        result = 'SUBMIT'; //from figma design
+        //result = 'SUBMIT'; //from figma design
         $('#btn-submit').text(result);
     }).change();"
     ;
