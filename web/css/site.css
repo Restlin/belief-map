@@ -3383,14 +3383,14 @@ parent .legend {
 
 .map-preview__inner.is-big .arrow-select {
     position: absolute;
-    right: -37px !important;
+    right: -43px !important;
     left: auto !important;
     top: 27px !important;
     z-index: -1;
 }
 
 .row.is-thin .arrow-right{
-    left: 11px !important;
+    left: 20px !important;
     z-index: -1;
 }
 

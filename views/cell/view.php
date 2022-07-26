@@ -48,7 +48,7 @@ $shiftCell = $shift->cellStart;
                                 if($cellCode == $startCode) {                                    
                                     if($startCode[0] == $endCode[0]) {
                                         $arrowClass = 'arrow-select arrow-right';
-                                        $img = Html::img('images/ar.svg');
+                                        $img = Html::img('images/arr.svg');
                                     } elseif($startCode[1] == $endCode[1]) {
                                         $arrowClass = 'arrow-select arrow-top';
                                         $img = Html::img('images/at.svg');
@@ -100,7 +100,7 @@ $shiftCell = $shift->cellStart;
                                 if($cellCode == $startCode) {
                                     if($startCode[0] == $endCode[0]) {
                                         $arrowClass = 'arrow-select arrow-right';
-                                        $img = Html::img('images/ar.svg');
+                                        $img = Html::img('images/arr.svg');
                                     } elseif($startCode[1] == $endCode[1]) {
                                         $arrowClass = 'arrow-select arrow-top';
                                         $img = Html::img('images/at.svg');
