@@ -3381,6 +3381,26 @@ parent .legend {
     margin-bottom: 35px !important;
 }
 
+.map-preview__inner.is-big .arrow-select {
+    position: absolute;
+    right: -37px !important;
+    left: auto !important;
+    top: 27px !important;
+    z-index: -1;
+}
+
+.row.is-thin .arrow-right{
+    left: 11px !important;
+    z-index: -1;
+}
+
+.map-preview__inner.is-big .arrow-top{
+    right: 0 !important; 
+    left: 5px !important; 
+    top: -32px !important; 
+    z-index: -1 !important; 
+}
+
 .map-preview__inner.is-big .arrow-select::before{
     display: none;
 }
