@@ -19,10 +19,10 @@ $link = Html::a('resources', ['resources'], ['class' => 'btn btn-info arguments_
                 <div class="arguments__steps">
                     <div class="arguments-steps">
                         <div class="arguments-steps__item">
-                            <div class="cell" style="background-color: #0e2f4a;">D3</div>
+                            <div class="cell" style="background-color: #2D597E;">D3</div>
                         </div>
                         <div class="arguments-steps__item">
-                            <div class="cell" style="background-color: #c3d502;" style="background-color: #c3d502;">C3</div>
+                            <div class="cell" style="background-color: #c3d502;">C3</div>
                         </div>
                     </div>
                 </div>
@@ -42,10 +42,10 @@ $link = Html::a('resources', ['resources'], ['class' => 'btn btn-info arguments_
                 <div class="arguments__steps">
                     <div class="arguments-steps">
                         <div class="arguments-steps__item">
-                            <div class="cell" style="background-color: #0e2f4a;">C3</div>
+                            <div class="cell" style="background-color: #2D597E;">C3</div>
                         </div>
                         <div class="arguments-steps__item">
-                            <div class="cell" style="background-color: #c3d502;" style="background-color: #c3d502;">B2</div>
+                            <div class="cell" style="background-color: #c3d502;">B2</div>
                         </div>
                     </div>
                 </div>
@@ -65,10 +65,10 @@ $link = Html::a('resources', ['resources'], ['class' => 'btn btn-info arguments_
                 <div class="arguments__steps">
                     <div class="arguments-steps">
                         <div class="arguments-steps__item">
-                            <div class="cell" style="background-color: #0e2f4a;">B2</div>
+                            <div class="cell" style="background-color: #2D597E;">B2</div>
                         </div>
                         <div class="arguments-steps__item">
-                            <div class="cell" style="background-color: #c3d502;" style="background-color: #c3d502;">A1</div>
+                            <div class="cell" style="background-color: #c3d502;">A1</div>
                         </div>
                     </div>
                 </div>

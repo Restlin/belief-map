@@ -64,7 +64,7 @@ $this->params['breadcrumbs'][] = ['label' => null, 'template' => ""];
                     <p>Information held is stored securely on the our company system and is made available only to those who need it to perform their roles. Information should be deleted when it is no longer required for the purpose of negotiation.</p>
                 </div>
                 <div class="promo__actions">
-                    <?= Html::a('start', ['use'], ['class' => 'btn btn-info promo__button']) ?>                    
+                    <?= Html::a('start', ['use'], ['class' => 'btn btn-info promo__button is-blue']) ?>                    
                 </div>
             </div>
         </div>

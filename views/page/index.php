@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create User', ['create'], ['class' => 'btn btn-info', 'style' => 'float: right; margin-top: -60px;']); ?>
+        <?= Html::a('Create User', ['create'], ['class' => 'btn btn-info is-blue', 'style' => 'float: right; margin-top: -60px;']); ?>
     </p>
 
     <?php Pjax::begin(); ?>    

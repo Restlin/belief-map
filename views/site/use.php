@@ -23,7 +23,7 @@
             <li>The process should be repeated after every interaction with a payer so the Progress Dashboard is accurate</li>
         </ol>
 
-        <?= Html::a('Continue', ['map/select', 'id' => $mapId], ['class' => 'btn btn-info use__button']) ?>
+        <?= Html::a('Continue', ['map/select', 'id' => $mapId], ['class' => 'btn btn-info use__button is-blue']) ?>
 
     </div>
 </div>        

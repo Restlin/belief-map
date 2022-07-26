@@ -38,7 +38,7 @@ $shiftCell = $shift->cellStart;
 
                         $normal = ['class' => 'cell is-big', 'style' => 'background: #fff;box-shadow: 6px 5px 18px rgba(0, 0, 0, 0.16);color: #adbd00;'];
                         $target = ['class' => 'cell is-big', 'style' => 'background: #C3D502;'];
-                        $current  = ['class' => 'cell is-big', 'style' => 'background: #7f8daf;'];
+                        $current  = ['class' => 'cell is-big', 'style' => 'background: #2D597E;'];
                         foreach($rows as $row) {
                             echo Html::beginTag('div', ['class' => 'row']);
                             foreach($columns as $column) {
@@ -143,13 +143,13 @@ $shiftCell = $shift->cellStart;
                         <div class="tool-tabs__col">
                             <div class="tool-tabs__card" >
                                 <div class="tool-tabs__title">Belief</div>
-                                <div class="tool-tabs__text"style="background-color: #7f8daf;">
+                                <div class="tool-tabs__text"style="background-color: #2D597E;">
                                     <?= Html::tag('p', $shift->cellStart->answer1->content) ?>
                                 </div>
                             </div>
                             <div class="tool-tabs__card" >
                                 <div class="tool-tabs__title">Practice</div>
-                                <div class="tool-tabs__text"style="background-color: #7f8daf;">
+                                <div class="tool-tabs__text"style="background-color: #2D597E;">
                                     <?= Html::tag('p', $shift->cellStart->answer2->content) ?>
                                 </div>
                             </div>
@@ -185,7 +185,7 @@ $shiftCell = $shift->cellStart;
                 <div class="tool-info__header">
                     <div class="arguments-steps tool-info__steps">
                         <div class="arguments-steps__item">
-                            <div class="cell" style="background-color: #0e2f4a;"><?=$startCode?></div>
+                            <div class="cell" style="background-color: #2D597E;"><?=$startCode?></div>
                         </div>
                         <div class="arguments-steps__item">
                             <div class="cell" style="background-color: #c3d502;"><?=$endCode?></div>
@@ -214,7 +214,7 @@ $shiftCell = $shift->cellStart;
 
                         </div>
                         <div class="tool-info__actions">
-                            <?= Html::a('Executive Summary', $shiftCell->link_pdf, ['class' => "btn btn-info tool-info__button $disSummary", 'style' => 'background-color: #7f8daf; border:0;']) ?>
+                            <?= Html::a('Executive Summary', $shiftCell->link_pdf, ['class' => "btn btn-info tool-info__button $disSummary", 'style' => 'background-color: #2D597E; border:0;']) ?>
                             <?= Html::a('Detailed Presentation', $shiftCell->link_full_deck, ['class' => "btn btn-info tool-info__button $disPresentation", 'style' => 'background-color: #a2bdc1; border:0;width: 190px;']) ?>
                         </div>                    
 
@@ -223,7 +223,7 @@ $shiftCell = $shift->cellStart;
                 <div class="tool-info__footer">
                     <div class="arguments-steps tool-info__steps is-large">
                             <div class="arguments-steps__item">
-                                <div class="cell" style="background-color: #7f8daf;"><?=$startCode?></div>
+                                <div class="cell" style="background-color: #2D597E;"><?=$startCode?></div>
                             </div>
                             <div class="arguments-steps__line" style="background:#c3d502;"></div>
                             <div class="arguments-steps__item">
@@ -238,7 +238,7 @@ $shiftCell = $shift->cellStart;
         <div class="tool__footer">
             <div class="tool__actions">
                 <?= Html::a('Next customer', ['map/select', 'id' => $map->id], ['class' => 'btn btn-info tool__button', 'style' => 'background-color: #c3d502; border:0;']) ?>
-                <?= Html::a('Finish', ['site/index'], ['class' => 'btn btn-info tool__button', 'style' => 'background-color: #a2bdc1; border:0;']) ?>
+                <?= Html::a('Finish', ['site/index'], ['class' => 'btn btn-info tool__button is-blue', 'style' => 'background-color: #a2bdc1; border:0;']) ?>
             </div>
                             
         </div>

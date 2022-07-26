@@ -982,8 +982,9 @@ parent .legend {
 .map-report thead tr th{
     padding-left: 30px;
     padding-right: 30px;
-    background: #A2BDC1;
+    background: #2D597E;
     border-bottom: 0 !important;
+    color: #fff;
 }
 
 .map-report thead tr th:first-child{
@@ -2946,7 +2947,7 @@ parent .legend {
     line-height: 17px;
     color: #FFFFFF;
 
-    background: #A2BDC1;
+    background: #2D597E;
     border-radius: 20px;
 }
 
@@ -3673,6 +3674,23 @@ parent .legend {
 
 .res__button:last-child{
     margin-right: 0;
+}
+
+.btn.is-blue{
+    background: #2D597E !important;
+}
+
+.map-view.is-small .btn{
+    background: #2D597E;
+}
+
+
+.map-view.is-small .cell.selected{
+    background: #2D597E !important;
+}
+
+.arguments__button{
+    background: #2D597E !important;
 }
 
 @media (max-width: 1400px){
