@@ -96,7 +96,11 @@ $shiftCell = $shift->cellStart;
                             echo Html::beginTag('div', ['class' => 'row is-thin']);
                             foreach($columns as $column) {
                                 $cellCode = $row.$column;
-                                $content = $cellCode;                                
+                                $content = $cellCode;
+                                $normal = ['class' => 'cell', 'style' => 'background: #C3D502;']; //обычная ячейка
+                                $target = ['class' => 'cell cell-target', 'style' => 'background: #C3D502;']; //клетка куда идет стрелка
+                                $current  = ['class' => 'cell cell-current', 'style' => 'background: #C3D502;']; //текущая клетка
+                                $cellAttrs = $normal;
                                 if($cellCode == $startCode) {
                                     if($startCode[0] == $endCode[0]) {
                                         $arrowClass = 'arrow-select arrow-right';
@@ -109,11 +113,16 @@ $shiftCell = $shift->cellStart;
                                         $img = Html::img('images/at1.svg');
                                     }
                                     $content .= Html::tag('div', $img, ['class' => $arrowClass]); //need correct arrow
+                                } elseif($cellCode == $endCode) {
+                                    $cellAttrs = $target;
+                                }
+                                if($cellCode == $cellCodes[$model->id]) { //current cell
+                                    $cellAttrs = $current;
                                 }
                                 if(isset($counts[$cellCode])) { //hardcode
                                     $content .= Html::tag('div', $counts[$cellCode], ['class' => 'logbook-count']);
                                 }
-                                echo Html::tag('div', $content, ['class' => 'cell', 'style' => 'background: #C3D502;']);
+                                echo Html::tag('div', $content, $cellAttrs);
                             }
                             echo Html::endTag('div');
                         }
