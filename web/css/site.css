@@ -2053,6 +2053,15 @@ parent .legend {
     border-bottom: 2px solid #a4c4cc;
     width: 50%;
 }
+
+.row.is-thin .cell-current{
+    background: #a2bdc1 !important;
+}
+
+.row.is-thin .cell-target{
+    background: #a2bdc1 !important;
+}
+
 /* 
 .product-view {
     border-left: 1px solid #DCDCDC;
