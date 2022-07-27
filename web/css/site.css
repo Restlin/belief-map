@@ -3342,6 +3342,9 @@ parent .legend {
     max-width: 210px;
     margin-bottom: 15px !important;
 }
+.row.is-thin .arrow-select{
+    z-index: -1;
+}
 
 .row.is-thin .arrow-select::before{
     display: none;
