@@ -982,7 +982,7 @@ parent .legend {
 .map-report thead tr th{
     padding-left: 30px;
     padding-right: 30px;
-    background: #2D597E;
+    background: #a2bdc1;
     border-bottom: 0 !important;
     color: #fff;
 }
@@ -2947,7 +2947,7 @@ parent .legend {
     line-height: 17px;
     color: #FFFFFF;
 
-    background: #2D597E;
+    background: #a2bdc1;
     border-radius: 20px;
 }
 
@@ -3677,20 +3677,24 @@ parent .legend {
 }
 
 .btn.is-blue{
-    background: #2D597E !important;
+    background: #a2bdc1;
+    border-color: #a2bdc1;
 }
 
 .map-view.is-small .btn{
-    background: #2D597E;
+    background: #a2bdc1;
+    border-color: #a2bdc1;
 }
 
 
 .map-view.is-small .cell.selected{
-    background: #2D597E !important;
+    background: #a2bdc1;
+    border-color: #a2bdc1;
 }
 
 .arguments__button{
-    background: #2D597E !important;
+    background: #a2bdc1;
+    border-color: #a2bdc1;
 }
 
 @media (max-width: 1400px){
