@@ -223,7 +223,7 @@ $shiftCell = $shift->cellStart;
 
                         </div>
                         <div class="tool-info__actions">
-                            <?= Html::a('Executive Summary', $shiftCell->link_pdf, ['class' => "btn btn-info tool-info__button $disSummary", 'style' => 'background-color: #a2bdc1; border:0;']) ?>
+                            <?= Html::a('Executive Summary', $shiftCell->link_pdf, ['class' => "btn btn-info tool-info__button $disSummary", 'style' => 'background:#C3D502; border:0;']) ?>
                             <?= Html::a('Detailed Presentation', $shiftCell->link_full_deck, ['class' => "btn btn-info tool-info__button $disPresentation", 'style' => 'background-color: #a2bdc1; border:0;width: 190px;']) ?>
                         </div>                    
 
