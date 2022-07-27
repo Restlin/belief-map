@@ -25,7 +25,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <div class="arguments__actions">
                     <?= Html::a('back', ['resources'], ['class' => 'btn btn-info arguments__button', 'style' => 'width: 73px;']) ?>                    
-                    <a href="#" class="btn btn-info arguments__button" style="background-color: #a2bdc1;border-color: #a2bdc1;">All references</a>
+                    <a href="#" class="btn btn-info arguments__button" style="background-color: #C3D503 !important;border-color: #C3D503 !important;">All references</a>
                 </div>
             </div>
 
