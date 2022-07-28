@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <div class="res-card__title">Executive summaries <br>Suitable for shorter (15 min) discussions</div>
                         <div class="arguments-steps res-card__steps">
                             <div class="arguments-steps__item">
-                                <div class="cell" style="background-color: #a2bdc1;">D3</div>
+                                <div class="cell" style="background-color: #7f8daf;">D3</div>
                             </div>
                             <div class="arguments-steps__item">
                                 <div class="cell" style="background-color: #c3d502;">C3</div>
@@ -27,7 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         </div>
                         <div class="arguments-steps res-card__steps">
                             <div class="arguments-steps__item">
-                                <div class="cell" style="background-color: #a2bdc1;">D3</div>
+                                <div class="cell" style="background-color: #7f8daf;">D3</div>
                             </div>
                             <div class="arguments-steps__item">
                                 <div class="cell" style="background-color: #c3d502;">C3</div>
@@ -35,7 +35,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         </div>
                         <div class="arguments-steps res-card__steps">
                             <div class="arguments-steps__item">
-                                <div class="cell" style="background-color: #a2bdc1;">D3</div>
+                                <div class="cell" style="background-color: #7f8daf;">D3</div>
                             </div>
                             <div class="arguments-steps__item">
                                 <div class="cell" style="background-color: #c3d502;">C3</div>
@@ -58,7 +58,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                         <div class="arguments-steps res-card__steps">
                             <div class="arguments-steps__item">
-                                <div class="cell" style="background-color: #a2bdc1;">D3</div>
+                                <div class="cell" style="background-color: #7f8daf;">D3</div>
                             </div>
                             <div class="arguments-steps__item">
                                 <div class="cell" style="background-color: #c3d502;">C3</div>
@@ -66,7 +66,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         </div>
                         <div class="arguments-steps res-card__steps">
                             <div class="arguments-steps__item">
-                                <div class="cell" style="background-color: #a2bdc1;">D3</div>
+                                <div class="cell" style="background-color: #7f8daf;">D3</div>
                             </div>
                             <div class="arguments-steps__item">
                                 <div class="cell" style="background-color: #c3d502;">C3</div>
@@ -74,7 +74,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         </div>
                         <div class="arguments-steps res-card__steps">
                             <div class="arguments-steps__item">
-                                <div class="cell" style="background-color: #a2bdc1;">D3</div>
+                                <div class="cell" style="background-color: #7f8daf;">D3</div>
                             </div>
                             <div class="arguments-steps__item">
                                 <div class="cell" style="background-color: #c3d502;">C3</div>
@@ -90,7 +90,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
         <div class="res__footer">
-            <?= Html::a('other supporting materials', ['resources', 'page' => 2], ['class' => 'btn btn-info res__button', 'style' => 'background-color: #a2bdc1; border:0;width: 240px;text-transform: uppercase;']) ?>
+            <?= Html::a('other supporting materials', ['resources', 'page' => 2], ['class' => 'btn btn-info res__button', 'style' => 'background-color: #7f8daf; border:0;width: 240px;text-transform: uppercase;']) ?>
             <a href="#" class="btn btn-info res__button" style="background-color: #c3d502; border:0;text-transform: uppercase;">All references</a>
         </div>
     </div>

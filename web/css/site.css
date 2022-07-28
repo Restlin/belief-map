@@ -982,7 +982,7 @@ parent .legend {
 .map-report thead tr th{
     padding-left: 30px;
     padding-right: 30px;
-    background: #a2bdc1;
+    background: #7f8daf;
     border-bottom: 0 !important;
     color: #fff;
 }
@@ -2055,11 +2055,11 @@ parent .legend {
 }
 
 .row.is-thin .cell-current{
-    background: #a2bdc1 !important;
+    background: #7f8daf !important;
 }
 
 .row.is-thin .cell-target{
-    background: #a2bdc1 !important;
+    background: #7f8daf !important;
 }
 
 /* 
@@ -2956,7 +2956,7 @@ parent .legend {
     line-height: 17px;
     color: #FFFFFF;
 
-    background: #a2bdc1;
+    background: #7f8daf;
     border-radius: 20px;
 }
 
@@ -3689,24 +3689,24 @@ parent .legend {
 }
 
 .btn.is-blue{
-    background: #a2bdc1;
-    border-color: #a2bdc1;
+    background: #7f8daf;
+    border-color: #7f8daf;
 }
 
 .map-view.is-small .btn{
-    background: #a2bdc1;
-    border-color: #a2bdc1;
+    background: #7f8daf;
+    border-color: #7f8daf;
 }
 
 
 .map-view.is-small .cell.selected{
-    background: #a2bdc1;
-    border-color: #a2bdc1;
+    background: #7f8daf !important;
+    border-color: #7f8daf;
 }
 
 .arguments__button{
-    background: #a2bdc1;
-    border-color: #a2bdc1;
+    background: #7f8daf;
+    border-color: #7f8daf;
 }
 
 @media (max-width: 1400px){
