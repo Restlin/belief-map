@@ -25,21 +25,23 @@ $this->params['breadcrumbs'][] = $this->title;
 $cellCodes = array_flip($cellCodes);
 $this->registerJsVar('cellCodes', $cellCodes);
 
-$js = "$('#map-question1, #map-question2, #map-contactname').on('change', function() {        
+$js = "$('#map-question1, #map-question2').on('change', function() {        
         let q1 = $('#map-question1').val();
         let q2 = $('#map-question2').val();
-        let contact = $('#map-contactname').val();
-        console.log(contact);
+        //let contact = $('#map-contactname').val();
+        //console.log(contact);
         let result = '';
         if(q1 && q2) {
             cell = cellCodes[q1+q2] ? cellCodes[q1+q2] : null;
             $('.cell').removeClass('selected');
             if(cell) {                
                 result = 'submit to '+ q1 + q2;
-                if(!contact) {
+                /*if(!contact) {
                     result = 'need select contact';
                 }
-                $('#btn-submit').prop('disabled', contact ? false : true);                
+                $('#btn-submit').prop('disabled', contact ? false : true);
+                */
+                $('#btn-submit').prop('disabled', false);
                 $('.cell[data-code='+q1 + q2 +']').addClass('selected');
             } else {
                 result = 'N/A';
@@ -124,7 +126,7 @@ $axisWidth = 75 * $model->size + 25;
                 ])->label('CURRENT PRACTICE') ?>
 
                 <div class="form-group">
-                    <?= Html::submitButton('Submit', ['class' => 'btn btn-info', 'id' => 'btn-submit', 'disabled' => true]) ?>
+                    <?= Html::submitButton('Submit', ['class' => 'btn btn-info', 'id' => 'btn-submit', /*'disabled' => true*/]) ?>
                 </div>
 
                 <?php ActiveForm::end(); ?>
