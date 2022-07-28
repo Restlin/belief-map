@@ -60,7 +60,7 @@ $shiftCell = $shift->cellStart;
                                 } elseif($cellCode == $endCode) {
                                     $cellAttrs = $target;
                                 }
-                                if($cellCode == $cellCodes[$model->id]) { //current cell
+                                if($cellCode == $startCode) {
                                     $cellAttrs = $current;
                                 }
                                 echo Html::tag('div', $content, $cellAttrs);
@@ -116,11 +116,8 @@ $shiftCell = $shift->cellStart;
                                 } elseif($cellCode == $endCode) {
                                     $cellAttrs = $target;
                                 }
-                                if($cellCode == $cellCodes[$model->id]) { //current cell
+                                if($cellCode == $startCode) { //current cell
                                     $cellAttrs = $current;
-                                }
-                                if(isset($counts[$cellCode])) { //hardcode
-                                    $content .= Html::tag('div', $counts[$cellCode], ['class' => 'logbook-count']);
                                 }
                                 echo Html::tag('div', $content, $cellAttrs);
                             }
