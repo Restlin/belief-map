@@ -2062,9 +2062,14 @@ parent .legend {
     opacity: 1 !important;
 }
 
-/* .row.is-thin .cell-target{
+.tool__button:hover{
+    background-color: #0E2F4A !important;
+    border-color: #0E2F4A !important;
+}
+
+.row.is-thin .cell-target{
     background: #7f8daf !important;
-} */
+}
 
 /* 
 .product-view {

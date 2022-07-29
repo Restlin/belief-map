@@ -97,7 +97,7 @@ $shiftCell = $shift->cellStart;
                             foreach($columns as $column) {
                                 $cellCode = $row.$column;
                                 $content = $cellCode;
-                                $normal = ['class' => 'cell', 'style' => 'background: #fff;box-shadow: 6px 5px 18px rgba(0, 0, 0, 0.16);color: #adbd00;']; //обычная ячейка
+                                $normal = ['class' => 'cell', 'style' => 'background: #C3D502;']; //обычная ячейка
                                 $target = ['class' => 'cell cell-target', 'style' => 'background: #C3D502;']; //клетка куда идет стрелка
                                 $current  = ['class' => 'cell cell-current', 'style' => 'background: #C3D502;']; //текущая клетка
                                 $cellAttrs = $normal;
