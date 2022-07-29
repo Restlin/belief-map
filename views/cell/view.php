@@ -46,7 +46,7 @@ $empties = [];
                                 $cellCode = $row.$column;
                                 $content = $cellCode;
                                 $cellAttrs = $normal;
-                                $empties[] = $cellcode;
+                                $empties[] = $cellCode;
                                 if($cellCode == $startCode) {                                    
                                     if($startCode[0] == $endCode[0]) {
                                         $arrowClass = 'arrow-select arrow-right';
