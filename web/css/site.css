@@ -2071,6 +2071,12 @@ parent .legend {
     background: #7f8daf !important;
 }
 
+.cell.empty{
+    background: #fff !important;
+    box-shadow: 6px 5px 18px rgba(0, 0, 0, 0.16);
+    color: #adbd00 !important;
+}
+
 /* 
 .product-view {
     border-left: 1px solid #DCDCDC;
