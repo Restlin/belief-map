@@ -231,6 +231,7 @@ class MapController extends Controller
     
     public function actionSelect($id) {
         $model = $this->findModel($id);
+        $model->setScenario('select');
         $user = Yii::$app->user->getIdentity()->user;
         \Yii::$app->user->identity->product = $model->product;
         $contactsRaw = Contact::getListByUserId($user->id);
