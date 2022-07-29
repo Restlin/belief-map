@@ -97,7 +97,7 @@ $shiftCell = $shift->cellStart;
                             foreach($columns as $column) {
                                 $cellCode = $row.$column;
                                 $content = $cellCode;
-                                $normal = ['class' => 'cell', 'style' => 'background: #C3D502;']; //обычная ячейка
+                                $normal = ['class' => 'cell', 'style' => 'background: #fff;box-shadow: 6px 5px 18px rgba(0, 0, 0, 0.16);color: #adbd00;']; //обычная ячейка
                                 $target = ['class' => 'cell cell-target', 'style' => 'background: #C3D502;']; //клетка куда идет стрелка
                                 $current  = ['class' => 'cell cell-current', 'style' => 'background: #C3D502;']; //текущая клетка
                                 $cellAttrs = $normal;
@@ -220,8 +220,8 @@ $shiftCell = $shift->cellStart;
 
                         </div>
                         <div class="tool-info__actions">
-                            <?= Html::a('Executive Summary', $shiftCell->link_pdf, ['class' => "btn btn-info tool-info__button $disSummary", 'style' => 'background:#7F8DAF; border:0;']) ?>
-                            <?= Html::a('Detailed Presentation', $shiftCell->link_full_deck, ['class' => "btn btn-info tool-info__button $disPresentation", 'style' => 'background-color: #C3D502; border:0;width: 190px;']) ?>
+                            <?= Html::a('Executive Summary', $shiftCell->link_pdf, ['class' => "btn btn-info tool-info__button $disSummary", 'style' => 'background:#7F8DAF; border:0;opacity: 1 !important;']) ?>
+                            <?= Html::a('Detailed Presentation', $shiftCell->link_full_deck, ['class' => "btn btn-info tool-info__button $disPresentation", 'style' => 'background-color: #C3D502; border:0;width: 190px;opacity: 1 !important;']) ?>
                         </div>                    
 
                     </div>
