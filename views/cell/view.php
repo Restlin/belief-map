@@ -20,6 +20,7 @@ $shift = $model->shifts ? $model->shifts[0] : $model->prevShifts[0];
 $startCode = $cellCodes[$shift->cell_start_id];
 $endCode = $cellCodes[$shift->cell_end_id];
 $shiftCell = $shift->cellStart;
+$empties = [];
 ?>
 
 <div class="tool">
@@ -45,6 +46,7 @@ $shiftCell = $shift->cellStart;
                                 $cellCode = $row.$column;
                                 $content = $cellCode;
                                 $cellAttrs = $normal;
+                                $empties[] = $cellcode;
                                 if($cellCode == $startCode) {                                    
                                     if($startCode[0] == $endCode[0]) {
                                         $arrowClass = 'arrow-select arrow-right';
@@ -100,6 +102,8 @@ $shiftCell = $shift->cellStart;
                                 $normal = ['class' => 'cell', 'style' => 'background: #C3D502;']; //обычная ячейка
                                 $target = ['class' => 'cell cell-target', 'style' => 'background: #C3D502;']; //клетка куда идет стрелка
                                 $current  = ['class' => 'cell cell-current', 'style' => 'background: #C3D502;']; //текущая клетка
+                                $current  = ['class' => 'cell cell-current', 'style' => 'background: #C3D502;']; //текущая клетка
+                                $empty  = ['class' => 'cell empty', 'style' => 'background: #C3D502;']; //текущая клетка
                                 $cellAttrs = $normal;
                                 if($cellCode == $startCode) {
                                     if($startCode[0] == $endCode[0]) {
@@ -115,6 +119,8 @@ $shiftCell = $shift->cellStart;
                                     $content .= Html::tag('div', $img, ['class' => $arrowClass]); //need correct arrow
                                 } elseif($cellCode == $endCode) {
                                     $cellAttrs = $target;
+                                } elseif(in_array($cellCode, $empties)) {
+                                    $cellAttrs = $empty;
                                 }
                                 if($cellCode == $startCode) { //current cell
                                     $cellAttrs = $current;
