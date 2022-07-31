@@ -6,7 +6,7 @@ use yii\helpers\Html;
 $this->title = 'Arguments';
 $this->params['breadcrumbs'][] = $this->title;
 
-$link = Html::a('resources', ['resources'], ['class' => 'btn btn-info arguments__button']);
+$link = Html::a('Resources', ['resources'], ['class' => 'btn btn-info arguments__button']);
 ?>
 <div class="arguments">
     <div class="arguments__container">
