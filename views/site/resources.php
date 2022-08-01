@@ -55,8 +55,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div class="res-card">
                     <div class="res-card__main">
                         <div class="res-card__title"><strong> Detailed  Presentations</strong> 
-                            <br>Suitable for longer (30-60 min) discussions
-                            <br>and providing more detailed evidence</div>
+                            <br>Suitable for shorter (30 mins) discussions
+                            <br>and providing more detailed evidence.</div>
 
                         <a href="#" class="arguments-steps res-card__steps">
                             <div class="arguments-steps__item">
