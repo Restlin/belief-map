@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="res__row">
                 <div class="res-card">
                     <div class="res-card__main">
-                        <div class="res-card__title">Executive summaries <br>Suitable for shorter (15 min) discussions</div>
+                        <div class="res-card__title">Executive summaries <br>Suitable for shorter (15 mins) discussions.</div>
                         <div class="arguments-steps res-card__steps">
                             <div class="arguments-steps__item">
                                 <div class="cell" style="background-color: #7f8daf;">D3</div>
@@ -53,8 +53,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div class="res-card">
                     <div class="res-card__main">
                         <div class="res-card__title">Detailed  Presentations
-                            <br>Suitable for longer (30-60 min) discussions
-                            <br>and providing more detailed evidence</div>
+                            <br>Suitable for shorter (30 mins) discussions
+                            <br>and providing more detailed evidence.</div>
 
                         <div class="arguments-steps res-card__steps">
                             <div class="arguments-steps__item">

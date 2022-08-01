@@ -42,12 +42,9 @@ $this->registerJs($js);
                 <div class="map-form__instruction">
                     <h2>Instructions</h2>
 
-                    <p>Patients with the disease had a decreased adjusted HRQoL score of 4.7, reflecting a poorer. European guidelines recommend screening for patients with the disease5</p>
-                    <p>The European guidelines state ‘’ diagnostics tests should be used for initial assessment of a patient with newly diagnosed disease in order to evaluate their suitability for particular therapies’.</p>
-                    <p>The limitations of current therapies</p>
-                    <p>Current therapies are associated with substantial toxicity, which contributes to morbidity and mortality</p>
-                    <p>Current therapies are associated with substantial toxicity, due to non-specific effects, causing adverse events6
-                        <br>Over 50% of mortalities in the disease may be due to treatment related adverse events7 </p>
+                    <p>Baseline grid / current position</p>
+                    <p>Grid at last entry [date]</p>
+                    <p>You can use the slider to view progress of all your stakeholder journey by looking at your baseline and historic entries</p>
                 </div>
                 <div class="map-preview__inner is-new">
                     <?php
