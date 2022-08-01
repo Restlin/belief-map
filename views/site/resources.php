@@ -16,29 +16,29 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="res__row">
                 <div class="res-card">
                     <div class="res-card__main">
-                        <div class="res-card__title">Executive summaries <br>Suitable for shorter (15 mins) discussions.</div>
+                        <div class="res-card__title"><strong>Executive summaries</strong> <br>Suitable for shorter (15 mins) discussions.</div>
                         <div class="arguments-steps res-card__steps">
                             <div class="arguments-steps__item">
-                                <div class="cell" style="background-color: #7f8daf;">D3</div>
+                                <a href="#" class="cell" style="background-color: #7f8daf;">D3</a>
                             </div>
                             <div class="arguments-steps__item">
-                                <div class="cell" style="background-color: #c3d502;">C3</div>
+                                <a href="#" class="cell" style="background-color: #c3d502;">C3</a>
                             </div>
                         </div>
                         <div class="arguments-steps res-card__steps">
                             <div class="arguments-steps__item">
-                                <div class="cell" style="background-color: #7f8daf;">D3</div>
+                                <a href="#" class="cell" style="background-color: #7f8daf;">C3</a>
                             </div>
                             <div class="arguments-steps__item">
-                                <div class="cell" style="background-color: #c3d502;">C3</div>
+                                <a href="#" class="cell" style="background-color: #c3d502;">B2</a>
                             </div>
                         </div>
                         <div class="arguments-steps res-card__steps">
                             <div class="arguments-steps__item">
-                                <div class="cell" style="background-color: #7f8daf;">D3</div>
+                                <a href="#" class="cell" style="background-color: #7f8daf;">B2</a>
                             </div>
                             <div class="arguments-steps__item">
-                                <div class="cell" style="background-color: #c3d502;">C3</div>
+                                <a href="#" class="cell" style="background-color: #c3d502;">A1</a>
                             </div>
                         </div>
                     </div>
@@ -52,32 +52,32 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="res__row">
                 <div class="res-card">
                     <div class="res-card__main">
-                        <div class="res-card__title">Detailed  Presentations
+                        <div class="res-card__title"><strong> Detailed  Presentations</strong> 
                             <br>Suitable for shorter (30 mins) discussions
                             <br>and providing more detailed evidence.</div>
 
                         <div class="arguments-steps res-card__steps">
                             <div class="arguments-steps__item">
-                                <div class="cell" style="background-color: #7f8daf;">D3</div>
+                                <a href="#" class="cell" style="background-color: #7f8daf;">D3</a>
                             </div>
                             <div class="arguments-steps__item">
-                                <div class="cell" style="background-color: #c3d502;">C3</div>
-                            </div>
-                        </div>
-                        <div class="arguments-steps res-card__steps">
-                            <div class="arguments-steps__item">
-                                <div class="cell" style="background-color: #7f8daf;">D3</div>
-                            </div>
-                            <div class="arguments-steps__item">
-                                <div class="cell" style="background-color: #c3d502;">C3</div>
+                                <a href="#" class="cell" style="background-color: #c3d502;">C3</a>
                             </div>
                         </div>
                         <div class="arguments-steps res-card__steps">
                             <div class="arguments-steps__item">
-                                <div class="cell" style="background-color: #7f8daf;">D3</div>
+                                <a href="#" class="cell" style="background-color: #7f8daf;">C3</a>
                             </div>
                             <div class="arguments-steps__item">
-                                <div class="cell" style="background-color: #c3d502;">C3</div>
+                                <a href="#" class="cell" style="background-color: #c3d502;">B2</a>
+                            </div>
+                        </div>
+                        <div class="arguments-steps res-card__steps">
+                            <div class="arguments-steps__item">
+                                <a href="#" class="cell" style="background-color: #7f8daf;">B2</a>
+                            </div>
+                            <div class="arguments-steps__item">
+                                <a href="#" class="cell" style="background-color: #c3d502;">A1</a>
                             </div>
                         </div>
                     </div>
@@ -95,6 +95,13 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     </div>
 </div>
+
+<style>
+    .cell:hover{
+        text-decoration: none;
+        color: #fff;
+    }
+</style>
 <?php
     echo $this->registerJsFile('plugins/jquery.scrollbar.min.js');
     echo $this->registerJsFile('plugins/ion.rangeSlider.min.js');
