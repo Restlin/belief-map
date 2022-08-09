@@ -44,7 +44,7 @@ $this->registerJs($js);
 
                     <p>Baseline grid / current position</p>
                     <p>Grid at last entry [date]</p>
-                    <p>You can use the slider to view progress of all your stakeholder journey by looking at your baseline and historic entries</p>
+                    <p>You can view the progress of your stakeholder journey by using the slider to look at your starting point and, historical entries versus current position.  This can be used both for individual stakeholders or to provide an overview of the journey for all stakeholders.  The numbers in the circles indicate the total number of stakeholders at that position.</p>
                 </div>
                 <div class="map-preview__inner is-new">
                     <?php

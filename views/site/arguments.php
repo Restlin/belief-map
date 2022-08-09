@@ -12,7 +12,7 @@ $link = Html::a('Resources', ['resources'], ['class' => 'btn btn-info arguments_
     <div class="arguments__container">
         <div class="arguments__header">
             <h1 class="arguments__title">Arguments</h1>
-            <div class="arguments__caption">There are three sets of core argments that support each shift:</div>
+            <div class="arguments__caption">Core messages support your argumentation for each shift.</div>
         </div>
         <div class="arguments__body">
             <div class="arguments__row">

@@ -13,7 +13,7 @@
         <div class="use__caption">To get started, follow these steps:</div>
 
         <ol>
-            <li>Log the initials of your payer stakeholders in the Stakeholder Log</li>
+            <li>Log the initials of your payer stakeholders in the tool.</li>
             <li>Double click on the payer stakeholder initials to bring up their profile. Answer the questions from the drop-down&nbsp;menu.
                 <br>The individual position of the stakeholder will be shown on the Stakeholder Belief Map</li>
             <li>View the stakeholder's current position on the map; and see what shift is recommended next</li>

@@ -65,10 +65,10 @@ $axisWidth = 75 * $model->size + 25;
 </style> -->
 <div class="map-view is-small">
     <div class="map-view__header">
-        <h1>To begin with the tool please fill in <br>necessary information below:</h1>
+        <h1>To begin with the tool, please fill in <br>necessary information below:</h1>
         <div class="map-view__text">
 
-            <p><b>1.  Stakeholder  Name - Please type in or choose initials of each payer.</b></p>
+            <p><b>1.  Stakeholder  Initials - Please type in or choose initials of each payer.</b></p>
 
             <p>
                 Answer two key stakeholder questions:
@@ -77,8 +77,8 @@ $axisWidth = 75 * $model->size + 25;
             </p>
             <p>
                 The tool automatically classifies your payer's starting position on the tool.
-                <br>A highlighted box will appear on the map to indicate current chosen position for selected Stakeholder Name.
-                <br><b>4.  Explore the suggested Belief/Practice shifts for current customer and the approved messages to for the next Shift by clicking 'Submit'.</b>
+                <br>A highlighted box will appear on the map to indicate current chosen position for selected Stakeholder Initials.
+                <br><b>4.  Explore the suggested Belief/Practice shifts for current stakeholder and the approved messages to for the next Shift by clicking 'Submit'.</b>
             </p>            
                 
         </div>

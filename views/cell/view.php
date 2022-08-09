@@ -86,7 +86,7 @@ $empties = [];
                     </div>
                 </div>
                 <div class="tool__map">
-                    <div class="map-preview__title">Overall Tool Perspective</div>
+                    <div class="map-preview__title">Stakeholder journey overview</div>
                     <div class="map-preview__inner is-new">                        
                         <?php
                         $countRows = count($map->answers1);
