@@ -10,7 +10,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="res__container">
         <div class="res__header">
             <h1 class="res__title">Resources</h1>
-            <div class="res__caption">Messages for each Shift have been used to develop two specific resources <br>for use with Payers to help move their position on the map.
+            <div class="res__caption">Messages for each Shift have been used to develop two specific resources <br>for use with payers to help move their position on the map.
                 <br>You can access the supporting references and additional<br> materials for help with your discussions for each Shift using the buttons below.
             </div>
         </div>

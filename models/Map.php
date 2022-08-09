@@ -91,7 +91,7 @@ class Map extends \yii\db\ActiveRecord
             'question2_text' => 'Question 2',
             'size' => 'Size',
             'intro' => 'Intro content',
-            'contactName' => 'Stakeholder  Name',
+            'contactName' => 'Stakeholder Initials',
         ];
     }
 
