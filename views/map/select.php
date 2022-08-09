@@ -65,7 +65,8 @@ $axisWidth = 75 * $model->size + 25;
 </style> -->
 <div class="map-view is-small">
     <div class="map-view__header">
-        <h1>The Tool<br>To begin with the tool, please fill in <br>necessary information below:</h1>
+        <h1>The Tool</h1>
+        <p>To begin with the tool, please fill in necessary information below:</p>
         <div class="map-view__text">
 
             <p><b>1.  Stakeholder  Initials - Please type in or choose initials of each payer.</b></p>

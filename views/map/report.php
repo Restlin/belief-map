@@ -24,6 +24,9 @@ $dates = [];
 foreach ($datesRaw as $date) {
     $dates[$date] = $date;
 }
+var_dump($cellCounts);
+var_dump($dates);
+die(1);
 
 $js = "$(function(){        
         $('#select-date').on('change', function(){
