@@ -122,10 +122,10 @@ class Logbook extends \yii\db\ActiveRecord
         $lastPosition = [];
         foreach($rows as $row) {
             if($oldDate != $row['date_in']) {                
-                $oldDate = $row['date_in'];
-                if($lastPosition) {
+                if($lastPosition && $oldDate) {
                     $contactPositions[$oldDate] = $lastPosition;
                 }
+                $oldDate = $row['date_in'];
             }
             $lastPosition[$row['contact_id']] = $row['cell_id'];
         }
