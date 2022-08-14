@@ -5,6 +5,7 @@ use yii\grid\GridView;
 use yii\widgets\Pjax;
 use app\models\Logbook;
 use app\models\Cell;
+use yii\grid\ActionColumn;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Map */
@@ -113,6 +114,7 @@ $this->registerJs($js);
                                         return $model->contact->name;
                                     },
                                     'filter' => $contacts,
+                                    'filterInputOptions' => ['prompt' => 'All'],
                                 ],
                                 [
                                     'attribute' => 'cell_id',
@@ -127,6 +129,13 @@ $this->registerJs($js);
                                     'attribute' => 'date_in',
                                     'format' => 'datetime',
                                     'filter' => false
+                                ],
+                                [
+                                    'class' => ActionColumn::class,
+                                    'contentOptions' => ['class' => 'action-column'],
+                                    'header' => 'controls',
+                                    'controller' => 'logbook',
+                                    'template' => '{delete}'
                                 ],
                             ],
                         ]);

@@ -247,6 +247,7 @@ class MapController extends Controller
             $contact = Contact::addOrFind($user, $model->contactName);
             $cell = Cell::findOne(['id' => $cellIds[$model->question1.$model->question2]]);
             $logbook = Logbook::addChooseCell($user, $contact, $cell, $model->question1.$model->question2);
+            \Yii::$app->session->set('cellId', $cell->id);
             $this->redirect(['cell/view', 'id' => $cell->id, 'contactId' => $contact->id]);
         }
         

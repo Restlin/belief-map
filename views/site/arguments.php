@@ -3,15 +3,19 @@
 
 use yii\helpers\Html;
 
-$this->title = 'Arguments';
+$this->title = 'Messages';
 $this->params['breadcrumbs'][] = $this->title;
-
-$link = Html::a('Resources', ['resources'], ['class' => 'btn btn-info arguments__button']);
+if(($cellId = \Yii::$app->session->get('cellId'))) {
+    $link1 = Html::a('Back', ['cell/view', 'id' => $cellId], ['class' => 'btn btn-info arguments__button']);
+} else {
+    $link1 = Html::a('Back', ['map/select', 'id' => 1], ['class' => 'btn btn-info arguments__button']);
+}
+$link2 = Html::a('Resources', ['resources'], ['class' => 'btn btn-info arguments__button']);
 ?>
 <div class="arguments">
     <div class="arguments__container">
         <div class="arguments__header">
-            <h1 class="arguments__title">Arguments</h1>
+            <h1 class="arguments__title">Messages</h1>
             <div class="arguments__caption">Core messages support your argumentation for each shift.</div>
         </div>
         <div class="arguments__body">
@@ -35,7 +39,8 @@ $link = Html::a('Resources', ['resources'], ['class' => 'btn btn-info arguments_
                 </div>
 
                 <div class="arguments__actions">
-                    <?= $link ?>
+                    <?= $link1 ?>
+                    <?= $link2 ?>
                 </div>
             </div>
             <div class="arguments__row">
@@ -58,7 +63,8 @@ $link = Html::a('Resources', ['resources'], ['class' => 'btn btn-info arguments_
                 </div>
 
                 <div class="arguments__actions">
-                    <?= $link ?>
+                    <?= $link1 ?>
+                    <?= $link2 ?>
                 </div>
             </div>
             <div class="arguments__row">
@@ -81,7 +87,8 @@ $link = Html::a('Resources', ['resources'], ['class' => 'btn btn-info arguments_
                 </div>
 
                 <div class="arguments__actions">
-                    <?= $link ?>
+                    <?= $link1 ?>
+                    <?= $link2 ?>
                 </div>
             </div>
 

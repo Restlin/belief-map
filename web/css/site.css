@@ -3287,7 +3287,15 @@ parent .legend {
 .arguments-steps{
     display: flex;
     align-items: center;
+    /*моя кривая верстка -начало*/
+    padding: 5px;
+    border-radius: 20px;
+    width:175px;
 }
+.arguments-steps:hover {
+    box-shadow: 0 7px 24px rgba(0, 0, 0, 0.15);
+}
+/*моя кривая верстка -конец*/
 
 .arguments-steps__item .cell{
     margin: 0 !important;
@@ -3558,6 +3566,17 @@ parent .legend {
 .tool-info__actions{
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.tool-info__actions fieldset {
+    margin-top: -35px;    
+    border-radius: 5px;
+    background: rgba(241, 245, 246, 0.99);
+    padding: 10px;
+}
+
+.tool-info__actions fieldset legend {
+    font-weight: bold;
 }
 
 .arguments-steps.is-large{

@@ -90,7 +90,7 @@ $toolUrl = $this->context->id == 'cell' && $this->context->action->id == 'view' 
             ['label' => 'Home', 'url' => ['/site/index'], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
             ['label' => 'How to use this tool', 'url' => ['/site/use'], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
             ['label' => 'Tool', 'url' => $toolUrl, 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
-            ['label' => 'Arguments', 'url' => ['/site/arguments'], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
+            ['label' => 'Messages', 'url' => ['/site/arguments'], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
             ['label' => 'Resources', 'url' => ['/site/resources'], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
             ['label' => 'Progress Dashboard', 'url' => ['/map/report', 'id' => $mapId], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
             //['label' => 'Help', 'url' => ['/site/help'], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],

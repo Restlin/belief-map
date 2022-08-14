@@ -158,9 +158,10 @@ class LogbookController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
-
-        return $this->redirect(['index']);
+        $model = $this->findModel($id);
+        $model->delete();
+        $mapId = $model->cell->answer1->map_id;
+        return $this->redirect(['map/report', 'id' => $mapId]);
     }
 
     /**

@@ -102,9 +102,8 @@ $empties = [];
                                 $normal = ['class' => 'cell', 'style' => 'background: #C3D502;']; //обычная ячейка
                                 $target = ['class' => 'cell cell-target', 'style' => 'background: #C3D502;']; //клетка куда идет стрелка
                                 $current  = ['class' => 'cell cell-current', 'style' => 'background: #C3D502;']; //текущая клетка
-                                $current  = ['class' => 'cell cell-current', 'style' => 'background: #C3D502;']; //текущая клетка
                                 $empty  = ['class' => 'cell empty', 'style' => 'background: #C3D502;']; //текущая клетка
-                                $cellAttrs = $normal;
+                                $cellAttrs = $empty;
                                 if($cellCode == $startCode) {
                                     if($startCode[0] == $endCode[0]) {
                                         $arrowClass = 'arrow-select arrow-right';
@@ -203,7 +202,7 @@ $empties = [];
                             <div class="cell" style="background-color: #c3d502;"><?=$endCode?></div>
                         </div>
                     </div>
-                    <div class="tool-info__title">Core Message Summary</div>
+                    <div class="tool-info__title">Messages</div>
                 </div>
                 <div class="tool-info__body">
                     <div class="tool-info__scroll scroll-area">
@@ -226,8 +225,12 @@ $empties = [];
 
                         </div>
                         <div class="tool-info__actions">
-                            <?= Html::a('Executive Summary', $shiftCell->link_pdf, ['class' => "btn btn-info tool-info__button $disSummary", 'style' => 'background:#7F8DAF; border:0;opacity: 1 !important;']) ?>
-                            <?= Html::a('Detailed Presentation', $shiftCell->link_full_deck, ['class' => "btn btn-info tool-info__button $disPresentation", 'style' => 'background-color: #C3D502; border:0;width: 190px;opacity: 1 !important;']) ?>
+                            <?= Html::a('Messages', ['site/arguments'], ['class' => "btn btn-info tool-info__button", 'style' => 'background:#7F8DAF; border:0;opacity: 1 !important;']) ?>
+                            <fieldset>
+                                <legend>Resourses</legend>
+                                    <?= Html::a('Executive Summary', $shiftCell->link_pdf, ['class' => "btn btn-info tool-info__button $disSummary", 'style' => 'background:#7F8DAF; border:0;opacity: 1 !important;']) ?>
+                                    <?= Html::a('Detailed Presentation', $shiftCell->link_full_deck, ['class' => "btn btn-info tool-info__button $disPresentation", 'style' => 'background-color: #C3D502; border:0;width: 190px;opacity: 1 !important;']) ?>
+                            </fieldset>
                         </div>                    
 
                     </div>
