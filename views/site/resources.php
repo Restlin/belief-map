@@ -6,9 +6,9 @@ use yii\helpers\Html;
 $this->title = 'Resources';
 $this->params['breadcrumbs'][] = $this->title;
 if(($cellId = \Yii::$app->session->get('cellId'))) {
-    $back = Html::a('back', ['cell/view', 'id' => $cellId], ['class' => 'btn btn-info res__button', 'style' => 'background-color: #7f8daf; border:0;width: 240px;text-transform: uppercase;']);
+    $back = Html::a('BACK', ['cell/view', 'id' => $cellId], ['class' => 'btn btn-info res__button', 'style' => 'background-color: #7f8daf; border:0;width: 240px;text-transform: uppercase;']);
 } else {
-    $back = Html::a('back', ['map/select', 'id' => 1], ['class' => 'btn btn-info res__button', 'style' => 'background-color: #7f8daf; border:0;width: 240px;text-transform: uppercase;']);
+    $back = Html::a('BACK', ['map/select', 'id' => 1], ['class' => 'btn btn-info res__button', 'style' => 'background-color: #7f8daf; border:0;width: 240px;text-transform: uppercase;']);
 }
 ?>
 <div class="res">
@@ -100,8 +100,8 @@ if(($cellId = \Yii::$app->session->get('cellId'))) {
         </div>
         <div class="res__footer">
             <?= $back ?>
-            <?= Html::a('other supporting materials', ['resources', 'page' => 2], ['class' => 'btn btn-info res__button', 'style' => 'background-color: #7f8daf; border:0;width: 240px;text-transform: uppercase;']) ?>
-            <a href="#" class="btn btn-info res__button" style="background-color: #c3d502; border:0;text-transform: uppercase;">All references</a>
+            <?= Html::a('other supporting materials', ['resources', 'page' => 2], ['class' => 'btn btn-info res__button', 'style' => 'background-color: #c3d502; border:0;width: 240px;text-transform: uppercase;']) ?>
+            <!-- <a href="#" class="btn btn-info res__button" style="background-color: #c3d502; border:0;text-transform: uppercase;">All references</a> -->
         </div>
     </div>
 </div>

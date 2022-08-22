@@ -154,13 +154,13 @@ $empties = [];
                         <div class="tool-tabs__col">
                             <div class="tool-tabs__card" >
                                 <div class="tool-tabs__title">Belief</div>
-                                <div class="tool-tabs__text"style="background-color: #7F8DAF;">
+                                <div class="tool-tabs__text"style="background-color: rgba(127, 141, 175, 0.6); color: #000;font-weight: 600;">
                                     <?= Html::tag('p', $shift->cellStart->answer1->content) ?>
                                 </div>
                             </div>
                             <div class="tool-tabs__card" >
                                 <div class="tool-tabs__title">Practice</div>
-                                <div class="tool-tabs__text"style="background-color: #7F8DAF;">
+                                <div class="tool-tabs__text"style="background-color: rgba(127, 141, 175, 0.6); color: #000;font-weight: 600;">
                                     <?= Html::tag('p', $shift->cellStart->answer2->content) ?>
                                 </div>
                             </div>

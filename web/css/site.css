@@ -961,6 +961,15 @@ parent .legend {
     margin-top: 105px;
 }
 
+.map-form__instruction h2 {
+    font-size: 16px;
+}
+
+.map-form__instruction p{
+    font-size: 16px;
+    line-height: 24px;
+}
+
 .report-data-container{
     height: 665px !important;
     padding: 45px 70px 70px !important;
@@ -3281,6 +3290,7 @@ parent .legend {
 .arguments__text{
     color: #292929;
     font-size: 12px;
+    font-size: 16px;
     line-height: 24px;
 }
 
@@ -3305,6 +3315,11 @@ parent .legend {
     display: flex;
     align-items: center;
     margin: 0 10px 0 0; 
+    z-index: 9;
+}
+
+.tool-info__actions fieldset legend{
+    text-align: center;
 }
 
 .arguments-steps__item::after{
@@ -3351,8 +3366,11 @@ parent .legend {
 
 .use ol li{
     color: #292929;
-    font-size: 12px;
+    /* /* font-size: 12px; */
     line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 .use__button{
@@ -3514,7 +3532,8 @@ parent .legend {
     justify-content: center;
     height: 100%;
 
-    color: #0e2f4a;
+    /* color: #0e2f4a; */
+    color: #000;
     font-size: 26px;
     font-weight: 600;
     letter-spacing: -0.65px;
