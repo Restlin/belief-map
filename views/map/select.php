@@ -36,6 +36,7 @@ $js = "$('#map-question1, #map-question2').on('change', function() {
             $('.cell').removeClass('selected');
             if(cell) {                
                 result = 'submit to '+ q1 + q2;
+                result = 'SUBMIT'; //from figma design
                 /*if(!contact) {
                     result = 'need select contact';
                 }
@@ -93,7 +94,7 @@ $axisWidth = 75 * $model->size + 25;
                     if($isAdmin) {
                         echo $form->field($model, 'intro')->textArea(['maxwidth' => 2000])->label('edit only by admins');
                     } else {
-                        echo Html::tag('p', $model->intro);
+                        //echo Html::tag('p', $model->intro);
                     }
                 ?>
                 <?= $form->field($model, 'contactName')->widget(Select2::class, [
