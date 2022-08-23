@@ -38,7 +38,7 @@ $js = "$('#map-question1, #map-question2').on('change', function() {
                 result = 'submit to '+ q1 + q2;
                 result = 'SUBMIT'; //from figma design
                 /*if(!contact) {
-                    result = 'need select contact';
+                    // result = 'need select contact';
                 }
                 $('#btn-submit').prop('disabled', contact ? false : true);
                 */
@@ -49,11 +49,11 @@ $js = "$('#map-question1, #map-question2').on('change', function() {
                 $('#btn-submit').prop('disabled', true);
             }
         } else {
-            result = 'need answers';
+            // result = 'need answers';
             $('#btn-submit').prop('disabled', true);
         }
         //result = 'SUBMIT'; //from figma design
-        $('#btn-submit').text(result);
+        // $('#btn-submit').text(result);
     }).change();"
     ;
 $this->registerJs($js);
