@@ -26,7 +26,7 @@ if(($cellId = \Yii::$app->session->get('cellId'))) {
                         <div class="res-card__title"><strong>Executive summaries</strong> <br>Suitable for shorter (15 min) discussions</div>
 
 
-                        <a href="#" class="arguments-steps res-card__steps">
+                        <a href="files/es_D3.pptx" class="arguments-steps res-card__steps">
                             <div class="arguments-steps__item">
                                 <div class="cell" style="background-color: #7f8daf;">D3</div>
                             </div>
@@ -34,7 +34,7 @@ if(($cellId = \Yii::$app->session->get('cellId'))) {
                                 <div class="cell" style="background-color: #c3d502;">C3</div>
                             </div>
                         </a>
-                        <a href="#" class="arguments-steps res-card__steps">
+                        <a href="files/es_C3.pptx" class="arguments-steps res-card__steps">
                             <div class="arguments-steps__item">
                                 <div class="cell" style="background-color: #7f8daf;">C3</div>
                             </div>
@@ -42,7 +42,7 @@ if(($cellId = \Yii::$app->session->get('cellId'))) {
                                 <div class="cell" style="background-color: #c3d502;">B2</div>
                             </div>
                         </a>
-                        <a href="#" class="arguments-steps res-card__steps">
+                        <a href="files/es_B2.pptx" class="arguments-steps res-card__steps">
                             <div class="arguments-steps__item">
                                 <div class="cell" style="background-color: #7f8daf;">B2</div>
                             </div>
@@ -53,7 +53,7 @@ if(($cellId = \Yii::$app->session->get('cellId'))) {
                     </div>
                     <div class="res-card__aside">
                         <div class="res-card__img">
-                            <?= Html::img('images/r1.png') ?>
+                            <?= Html::img('images/r1.jpg') ?>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@ if(($cellId = \Yii::$app->session->get('cellId'))) {
                             <br>Suitable for shorter (30 mins) discussions
                             <br>and providing more detailed evidence.</div>
 
-                        <a href="#" class="arguments-steps res-card__steps">
+                        <a href="files/dp_D3.pptx" class="arguments-steps res-card__steps">
                             <div class="arguments-steps__item">
                                 <div class="cell" style="background-color: #7f8daf;">D3</div>
                             </div>
@@ -73,7 +73,7 @@ if(($cellId = \Yii::$app->session->get('cellId'))) {
                                 <div class="cell" style="background-color: #c3d502;">C3</div>
                             </div>
                         </a>
-                        <a href="#" class="arguments-steps res-card__steps">
+                        <a href="files/dp_C3.pptx" class="arguments-steps res-card__steps">
                             <div class="arguments-steps__item">
                                 <div class="cell" style="background-color: #7f8daf;">C3</div>
                             </div>
@@ -81,7 +81,7 @@ if(($cellId = \Yii::$app->session->get('cellId'))) {
                                 <div class="cell" style="background-color: #c3d502;">B2</div>
                             </div>
                         </a>
-                        <a href="#" class="arguments-steps res-card__steps">
+                        <a href="files/dp_B2.pptx" class="arguments-steps res-card__steps">
                             <div class="arguments-steps__item">
                                 <div class="cell" style="background-color: #7f8daf;">B2</div>
                             </div>
@@ -92,7 +92,7 @@ if(($cellId = \Yii::$app->session->get('cellId'))) {
                     </div>
                     <div class="res-card__aside">
                         <div class="res-card__img">
-                            <?= Html::img('images/r2.png') ?>
+                            <?= Html::img('images/r2.jpg') ?>
                         </div>
                     </div>
                 </div>

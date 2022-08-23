@@ -35,7 +35,7 @@ $link2 = Html::a('Resources', ['resources'], ['class' => 'btn btn-info arguments
                 </div>
 
                 <div class="arguments__image">
-                    <?=Html::img("images/a1.jpg", ['class' => "arguments__img"]) ?>
+                    <?=Html::img("images/a1.png", ['class' => "arguments__img"]) ?>
                 </div>
 
                 <div class="arguments__actions">
@@ -59,7 +59,7 @@ $link2 = Html::a('Resources', ['resources'], ['class' => 'btn btn-info arguments
                 </div>
 
                 <div class="arguments__image">
-                    <?=Html::img("images/a2.jpg", ['class' => "arguments__img"]) ?>
+                    <?=Html::img("images/a2.png", ['class' => "arguments__img"]) ?>
                 </div>
 
                 <div class="arguments__actions">
@@ -83,7 +83,7 @@ $link2 = Html::a('Resources', ['resources'], ['class' => 'btn btn-info arguments
                 </div>
 
                 <div class="arguments__image">
-                    <?=Html::img("images/a3.jpg", ['class' => "arguments__img"]) ?>
+                    <?=Html::img("images/a3.png", ['class' => "arguments__img"]) ?>
                 </div>
 
                 <div class="arguments__actions">

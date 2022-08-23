@@ -20,6 +20,7 @@ $shift = $model->shifts ? $model->shifts[0] : $model->prevShifts[0];
 $startCode = $cellCodes[$shift->cell_start_id];
 $endCode = $cellCodes[$shift->cell_end_id];
 $shiftCell = $shift->cellStart;
+$shiftCellCode = $cellCodes[$shiftCell->id];
 $empties = [];
 ?>
 
@@ -209,8 +210,18 @@ $empties = [];
                         <div class="tool-info__text">
                             <?php                                
                                 $links = '';
-                                $disSummary = $shiftCell->link_full_deck ? '' : 'disabled';
-                                $disPresentation = $shiftCell->link_pdf ? '' : 'disabled';
+                                if(in_array($shiftCellCode, ['D3', 'C3', 'B2'])) {
+                                    $disSummary = '';
+                                    $summaryLink = "files/es_$shiftCellCode.pptx";
+                                    $presentationLink = "files/dp_$shiftCellCode.pptx";
+                                    $disPresentation = '';
+                                } else {
+                                    $disSummary = 'disabled';
+                                    $disPresentation = 'disabled';
+                                    $summaryLink = "#";
+                                    $presentationLink = "#";
+                                }
+                                
                                 if($shiftCell->links) {
                                     $urls = explode(' ', $shiftCell->links);
                                     $links = [];
@@ -228,8 +239,8 @@ $empties = [];
                             <?= Html::a('Messages', ['site/arguments'], ['class' => "btn btn-info tool-info__button", 'style' => 'background:#7F8DAF; border:0;opacity: 1 !important;']) ?>
                             <fieldset>
                                 <legend>Resourses</legend>
-                                    <?= Html::a('Executive Summary', $shiftCell->link_pdf, ['class' => "btn btn-info tool-info__button $disSummary", 'style' => 'background:#7F8DAF; border:0;opacity: 1 !important;']) ?>
-                                    <?= Html::a('Detailed Presentation', $shiftCell->link_full_deck, ['class' => "btn btn-info tool-info__button $disPresentation", 'style' => 'background-color: #C3D502; border:0;width: 190px;opacity: 1 !important;']) ?>
+                                    <?= Html::a('Executive Summary', $summaryLink, ['class' => "btn btn-info tool-info__button $disSummary", 'style' => 'background:#7F8DAF; border:0;opacity: 1 !important;']) ?>
+                                    <?= Html::a('Detailed Presentation', $presentationLink, ['class' => "btn btn-info tool-info__button $disPresentation", 'style' => 'background-color: #C3D502; border:0;width: 190px;opacity: 1 !important;']) ?>
                             </fieldset>
                         </div>                    
 

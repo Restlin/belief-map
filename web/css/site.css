@@ -3609,7 +3609,7 @@ parent .legend {
 
 .arguments-steps__line{
     position: absolute;
-    left: 54px;
+    left: 59px;
     right: 0;
     width: calc(100% - 108px);
     height: 8px;
