@@ -3518,7 +3518,9 @@ parent .legend {
     box-shadow: inset 2px 1px 4px rgba(0, 0, 0, 0.15);
     background-color: #c3d502;
 
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: #000;
+    font-weight: 600;
     font-size: 12px;
     letter-spacing: -0.3px;
     line-height: 18px;
