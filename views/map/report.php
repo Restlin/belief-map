@@ -15,7 +15,7 @@ use yii\grid\ActionColumn;
 /* @var $cellIds array */
 /* @var $cellCounts array */
 
-$this->title = "Progress Dashboard";
+$this->title = "Progress dashboard";
 //$this->params['breadcrumbs'][] = ['label' => 'Products', 'url' => ['product/list']];
 //$this->params['breadcrumbs'][] = ['label' => $model->product->name, 'url' => ['product/view', 'id' => $model->product->id]];
 $this->params['breadcrumbs'][] = $this->title;

@@ -16,7 +16,7 @@ $link2 = Html::a('Resources', ['resources'], ['class' => 'btn btn-info arguments
     <div class="arguments__container">
         <div class="arguments__header">
             <h1 class="arguments__title">Messages</h1>
-            <div class="arguments__caption">Core messages support your argumentation for each shift.</div>
+            <div class="arguments__caption">For these payer stakeholders, there are three important shifts. The core messages below support your argumentation for each shift.</div>
         </div>
         <div class="arguments__body">
             <div class="arguments__row">

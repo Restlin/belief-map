@@ -40,7 +40,7 @@ class SiteController extends Controller
                 'only' => ['logout', 'index'],
                 'rules' => [
                     [
-                        'actions' => ['logout', 'index', 'use', 'arguments', 'resources'],
+                        'actions' => ['logout', 'index', 'use', 'arguments', 'resources', 'about'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -90,6 +90,10 @@ class SiteController extends Controller
 
     public function actionUse() {
         return $this->render('use', ['mapId' => 1]);
+    }
+
+    public function actionAbout() {
+        return $this->render('about');
     }
     
     public function actionArguments() {

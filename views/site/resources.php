@@ -6,24 +6,25 @@ use yii\helpers\Html;
 $this->title = 'Resources';
 $this->params['breadcrumbs'][] = $this->title;
 if(($cellId = \Yii::$app->session->get('cellId'))) {
-    $back = Html::a('BACK', ['cell/view', 'id' => $cellId], ['class' => 'btn btn-info res__button', 'style' => 'background-color: #7f8daf; border:0;width: 240px;text-transform: uppercase;']);
+    $back = Html::a('Back', ['cell/view', 'id' => $cellId], ['class' => 'btn btn-info res__button', 'style' => 'background-color: #7f8daf; border:0;width: 240px;']);
 } else {
-    $back = Html::a('BACK', ['map/select', 'id' => 1], ['class' => 'btn btn-info res__button', 'style' => 'background-color: #7f8daf; border:0;width: 240px;text-transform: uppercase;']);
+    $back = Html::a('Back', ['map/select', 'id' => 1], ['class' => 'btn btn-info res__button', 'style' => 'background-color: #7f8daf; border:0;width: 240px;']);
 }
 ?>
 <div class="res">
     <div class="res__container">
         <div class="res__header">
             <h1 class="res__title">Resources</h1>
-            <div class="res__caption">Messages for each Shift have been used to develop two specific resources <br>for use with payers to help move their position on the map.
-                <br>You can access the supporting references and additional<br> materials for help with your discussions for each Shift using the buttons below.
+            <div class="res__caption">Messages for each shift have been used to develop two specific resources for use with payers to help move their position on the map.
+                <br>ou can access the supporting references and additional materials for help with your discussions by clicking on each shift below e.g. D3 – C3. This will bring up PowerPoint slides for each shift.                
             </div>
         </div>
         <div class="res__body">
             <div class="res__row">
                 <div class="res-card">
                     <div class="res-card__main">
-                        <div class="res-card__title"><strong>Executive summaries</strong> <br>Suitable for shorter (15 min) discussions</div>
+                        <div class="res-card__title"><strong>Executive summaries</strong>                             
+                            <br>Suitable for shorter (15 minute) discussions</div>
 
 
                         <a href="files/es_D3.pptx" class="arguments-steps res-card__steps">
@@ -61,9 +62,9 @@ if(($cellId = \Yii::$app->session->get('cellId'))) {
             <div class="res__row">
                 <div class="res-card">
                     <div class="res-card__main">
-                        <div class="res-card__title"><strong> Detailed  Presentations</strong> 
-                            <br>Suitable for shorter (30 mins) discussions
-                            <br>and providing more detailed evidence.</div>
+                        <div class="res-card__title"><strong> Detailed  presentations</strong>
+                            <br>Suitable for longer (30 minute) discussions
+                            <br>and providing more detailed evidence</div>
 
                         <a href="files/dp_D3.pptx" class="arguments-steps res-card__steps">
                             <div class="arguments-steps__item">
@@ -100,7 +101,7 @@ if(($cellId = \Yii::$app->session->get('cellId'))) {
         </div>
         <div class="res__footer">
             <?= $back ?>
-            <?= Html::a('other supporting materials', ['resources', 'page' => 2], ['class' => 'btn btn-info res__button', 'style' => 'background-color: #c3d502; border:0;width: 240px;text-transform: uppercase;']) ?>
+            <?= Html::a('Оther supporting materials', ['resources', 'page' => 2], ['class' => 'btn btn-info res__button', 'style' => 'background-color: #c3d502; border:0;width: 240px;']) ?>
             <!-- <a href="#" class="btn btn-info res__button" style="background-color: #c3d502; border:0;text-transform: uppercase;">All references</a> -->
         </div>
     </div>

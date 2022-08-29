@@ -88,11 +88,15 @@ $toolUrl = $this->context->id == 'cell' && $this->context->action->id == 'view' 
             ],*/            
 
             ['label' => 'Home', 'url' => ['/site/index'], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
+            ['label' => 'About the tool', 'url' => ['/site/about'], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
             ['label' => 'How to use this tool', 'url' => ['/site/use'], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
-            ['label' => 'Tool', 'url' => $toolUrl, 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
+            ['label' => 'The tool', 'url' => $toolUrl, 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
             ['label' => 'Messages', 'url' => ['/site/arguments'], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
-            ['label' => 'Resources', 'url' => ['/site/resources'], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
-            ['label' => 'Progress Dashboard', 'url' => ['/map/report', 'id' => $mapId], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
+            ['label' => 'Resources', 'items' => [
+                ['label' => 'Resources', 'url' => ['/site/resources']],
+                ['label' => 'Other supporting materials', 'url' => ['/site/resources', 'page' => 2]],
+            ], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
+            ['label' => 'Progress dashboard', 'url' => ['/map/report', 'id' => $mapId], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
             //['label' => 'Help', 'url' => ['/site/help'], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
             //['label' => 'Introduction and Guidance', 'url' => ['/product/introduction', 'id' => $product ? $product->id : $product], 'visible' => $product ? true : false, 'linkOptions' => ['style' => "color: $textColor"]],
             Yii::$app->user->isGuest ? (

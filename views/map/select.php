@@ -16,7 +16,7 @@ use kartik\icons\Icon;
 /* @var $isAdmin bool */
 
 $this->title = 'Customer Belief Mapping Tool';
-$this->title = 'Tool';
+$this->title = 'The tool';
 //$this->params['breadcrumbs'][] = ['label' => 'Products', 'url' => ['product/list']];
 //$this->params['breadcrumbs'][] = ['label' => $model->product->name, 'url' => ['product/view', 'id' => $model->product->id]];
 $this->params['breadcrumbs'][] = $this->title;

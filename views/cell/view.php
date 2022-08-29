@@ -8,7 +8,7 @@ use yii\helpers\Html;
 /* @var $counts array */
 
 $map = $model->answer1->map;
-$this->title = 'Tool';
+$this->title = 'The tool';
 //$this->params['breadcrumbs'][] = ['label' => 'Products', 'url' => ['product/list']];
 //$this->params['breadcrumbs'][] = ['label' => $map->product->name, 'url' => ['product/view', 'id' => $map->product->id]];
 $this->params['breadcrumbs'][] = $this->title;
@@ -238,8 +238,8 @@ $empties = [];
                         <div class="tool-info__actions">
                             <?= Html::a('Messages', ['site/arguments'], ['class' => "btn btn-info tool-info__button", 'style' => 'background:#7F8DAF; border:0;opacity: 1 !important;']) ?>
                             <fieldset>
-                                <legend>Resourses</legend>
-                                    <?= Html::a('Executive Summary', $summaryLink, ['class' => "btn btn-info tool-info__button $disSummary", 'style' => 'background:#7F8DAF; border:0;opacity: 1 !important;']) ?>
+                                <legend>Supporting resources</legend>
+                                    <?= Html::a('Executive Summary', $summaryLink, ['class' => "btn btn-info tool-info__button $disSummary", 'style' => 'background-color: #C3D502; border:0;width: 190px;opacity: 1 !important;']) ?>
                                     <?= Html::a('Detailed Presentation', $presentationLink, ['class' => "btn btn-info tool-info__button $disPresentation", 'style' => 'background-color: #C3D502; border:0;width: 190px;opacity: 1 !important;']) ?>
                             </fieldset>
                         </div>                    
