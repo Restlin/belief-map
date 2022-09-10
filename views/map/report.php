@@ -36,58 +36,63 @@ $js = "$(function(){
 $this->registerJs($js);
 ?>
 <div class="map-report">
-
     <div class="map-form">
         <div class="map-form__grid is-revert">
             <div class="map-preview map-form__aside">
                 <div class="map-form__instruction">
                     <h2>Instructions</h2>
 
-                    <!--<p>Baseline grid / current position</p>
-                    <p>Grid at last entry [date]</p>!-->
-                    <p>You can view the progress of your stakeholder journey by using the slider to look at your starting point and, historical entries versus current position.  This can be used both for individual stakeholders or to provide an overview of the journey for all stakeholders.  The numbers in the circles indicate the total number of stakeholders at that position.</p>
+                    <ul>
+                        <li>You can view the progress of your stakeholder journey by using the slider to look at your starting point and, historical entries versus current position.</li>
+                        <li>This can be used both for individual stakeholders or to provide an overview of the journey for all stakeholders.  </li>
+                        <li>The numbers in the circles on the grid indicate the total number of stakeholders at that position</li>
+                        <li>The grid displays the position of your stakeholders at a point in time. You can filter the list underneath to look at the shifts for one particular stakeholder over time</li>
+                        <li>You can also control entries by deleting dublicate or incorrect entries</li>
+                    </ul>
                 </div>
-                <div class="map-preview__inner is-new">
-                    <?php
-                    $countRows = count($model->answers1);
-                    $countColumns = count($model->answers2);
-                    $rows = array_slice(['A', 'B', 'C', 'D', 'E'], 0, $countRows);
-                    $columns = array_slice(['5', '4', '3', '2', '1'], 5 - $countColumns, $countColumns);
-                    foreach ($rows as $row) {
-                        echo Html::beginTag('div', ['class' => 'row']);
-                        foreach ($columns as $column) {
-                            $arrows = [];
-                            $cellCode = $row . $column;
-                            $cellId = isset($cellIds[$cellCode]) ? $cellIds[$cellCode] : null;
-                            if (key_exists($cellId, $cellCounts)) {
-                                foreach ($cellCounts[$cellId] as $date => $count) {
-                                    if ($count > 99) {
-                                        $count = "99+";
+                <div class="map-preview__map">
+                    <div class="map-preview__inner is-new">
+                        <?php
+                        $countRows = count($model->answers1);
+                        $countColumns = count($model->answers2);
+                        $rows = array_slice(['A', 'B', 'C', 'D', 'E'], 0, $countRows);
+                        $columns = array_slice(['5', '4', '3', '2', '1'], 5 - $countColumns, $countColumns);
+                        foreach ($rows as $row) {
+                            echo Html::beginTag('div', ['class' => 'row']);
+                            foreach ($columns as $column) {
+                                $arrows = [];
+                                $cellCode = $row . $column;
+                                $cellId = isset($cellIds[$cellCode]) ? $cellIds[$cellCode] : null;
+                                if (key_exists($cellId, $cellCounts)) {
+                                    foreach ($cellCounts[$cellId] as $date => $count) {
+                                        if ($count > 99) {
+                                            $count = "99+";
+                                        }
+                                        $arrows[] = Html::tag('div', $count, ['class' => "logbook-count hidden date-$date"]);
                                     }
-                                    $arrows[] = Html::tag('div', $count, ['class' => "logbook-count hidden date-$date"]);
+                                    //$arrow = Html::tag('div', $count, ['class' => "logbook-count"]);
                                 }
-                                //$arrow = Html::tag('div', $count, ['class' => "logbook-count"]);
+                                $arrow = implode("\n", $arrows);
+                                $color = $colors[$cellCode];
+                                echo Html::tag("div", $cellCode . $arrow, ['class' => "cell", 'style' => "background: $color", 'data-code' => $cellCode]), "\n";
                             }
-                            $arrow = implode("\n", $arrows);
-                            $color = $colors[$cellCode];
-                            echo Html::tag("div", $cellCode . $arrow, ['class' => "cell", 'style' => "background: $color", 'data-code' => $cellCode]), "\n";
+                            echo Html::endTag('div');
                         }
-                        echo Html::endTag('div');
-                    }
-                    ?>
-                    <parent class="vertical">
-                        <div class="legend">&nbsp;Current&nbsp;belief&nbsp;</div>
-                        <div class="line">
-                            <div class="bullet"></div>
-                        </div>
-                    </parent>
-                    <parent class="horizontal">
-                        <span class="legend">&nbsp;Current&nbsp;Practice&nbsp;</span>
-                        <div class="line">
-                            <div class="bullet"></div>
-                        </div>
-                    </parent>
-                </div>                
+                        ?>
+                        <parent class="vertical">
+                            <div class="legend">&nbsp;Current&nbsp;belief&nbsp;</div>
+                            <div class="line">
+                                <div class="bullet"></div>
+                            </div>
+                        </parent>
+                        <parent class="horizontal">
+                            <span class="legend">&nbsp;Current&nbsp;Practice&nbsp;</span>
+                            <div class="line">
+                                <div class="bullet"></div>
+                            </div>
+                        </parent>
+                    </div>  
+                </div>              
             </div>
             <div class="map-form__main">
                 <div class="report-data-container">

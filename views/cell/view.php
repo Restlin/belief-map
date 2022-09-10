@@ -40,7 +40,7 @@ $empties = [];
 
                         $normal = ['class' => 'cell is-big', 'style' => 'background: #fff;box-shadow: 6px 5px 18px rgba(0, 0, 0, 0.16);color: #adbd00;'];
                         $target = ['class' => 'cell is-big', 'style' => 'background: #C3D502;'];
-                        $current  = ['class' => 'cell is-big', 'style' => 'background: #7F8DAF;'];
+                        $current  = ['class' => 'cell is-big', 'style' => 'background: linear-gradient(0deg, #59CBE8, #59CBE8), #C3D502;'];
                         foreach($rows as $row) {
                             echo Html::beginTag('div', ['class' => 'row']);
                             foreach($columns as $column) {
@@ -155,13 +155,13 @@ $empties = [];
                         <div class="tool-tabs__col">
                             <div class="tool-tabs__card" >
                                 <div class="tool-tabs__title">Belief</div>
-                                <div class="tool-tabs__text"style="background-color: rgba(127, 141, 175, 0.6); color: #000;font-weight: 600;">
+                                <div class="tool-tabs__text"style="background: linear-gradient(0deg, #59CBE8, #59CBE8), #FFFFFF; box-shadow: 1.6px 1.2px 4px rgba(0, 0, 0, 0.15);">
                                     <?= Html::tag('p', $shift->cellStart->answer1->content) ?>
                                 </div>
                             </div>
                             <div class="tool-tabs__card" >
                                 <div class="tool-tabs__title">Practice</div>
-                                <div class="tool-tabs__text"style="background-color: rgba(127, 141, 175, 0.6); color: #000;font-weight: 600;">
+                                <div class="tool-tabs__text"style="background: linear-gradient(0deg, #59CBE8, #59CBE8), #FFFFFF; box-shadow: 1.6px 1.2px 4px rgba(0, 0, 0, 0.15);">
                                     <?= Html::tag('p', $shift->cellStart->answer2->content) ?>
                                 </div>
                             </div>
@@ -170,7 +170,7 @@ $empties = [];
                         <div class="tool-tabs__col">
                             <div class="tool-tabs__label">
                                 Shift to
-                                <img src="images/ar.svg" alt="">
+                                <!-- <img src="images/ar.svg" alt=""> -->
                             </div>
                         </div>
 
@@ -197,7 +197,7 @@ $empties = [];
                 <div class="tool-info__header">
                     <div class="arguments-steps tool-info__steps">
                         <div class="arguments-steps__item">
-                            <div class="cell" style="background-color: #7F8DAF;"><?=$startCode?></div>
+                            <div class="cell" style="background: linear-gradient(0deg, #59CBE8, #59CBE8), #F3F3F3;"><?=$startCode?></div>
                         </div>
                         <div class="arguments-steps__item">
                             <div class="cell" style="background-color: #c3d502;"><?=$endCode?></div>
@@ -249,7 +249,7 @@ $empties = [];
                 <div class="tool-info__footer">
                     <div class="arguments-steps tool-info__steps is-large">
                             <div class="arguments-steps__item">
-                                <div class="cell" style="background-color: #7F8DAF;"><?=$startCode?></div>
+                                <div class="cell" style="background: linear-gradient(0deg, #59CBE8, #59CBE8), #F3F3F3;"><?=$startCode?></div>
                             </div>
                             <div class="arguments-steps__line" style="background:#c3d502;"></div>
                             <div class="arguments-steps__item">
