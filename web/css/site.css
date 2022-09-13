@@ -696,7 +696,6 @@ main > .container {
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
-    text-transform: uppercase;
     color: #FFFFFF;
     transition: 0.5s;
     border-color: transparent !important;
