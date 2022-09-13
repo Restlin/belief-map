@@ -105,19 +105,14 @@ $toolUrl = $this->context->id == 'cell' && $this->context->action->id == 'view' 
                 '<li>'
                 . Html::beginForm(['/site/logout'], 'post', ['class' => 'form-inline'])
                 . Html::submitButton(
-                    Html::tag('span', 'Logout', ['style' => "color: $textColor"]),
+                    Html::tag('span', 'Logout'),
                     ['class' => 'logout-btn']
                 )
                 . Html::endForm()
                 . '</li>'
-                // <li style="float:right">'
-                // . Html::beginForm(['/site/logout'], 'post', ['class' => 'form-inline'])
-                // . Html::submitButton(
-                //     Icon::show('sign-out-alt', ['style' => "font-size: 28px; color: $textColor"]).Html::tag('span', 'Logout', ['style' => "color: $textColor"]),
-                //     ['class' => 'btn btn-link logout', ['style' => "color: $textColor"]]
-                // )
-                // . Html::endForm()
-                // . '</li>'
+                . '<li> <a href="#" class="profile-link"></a>'
+                
+                . '</li>'
             ),            
         ],
     ]);

@@ -34,7 +34,7 @@ $this->params['breadcrumbs'][] = ['label' => null, 'template' => ""];
 
 
             <div class="promo__actions">
-                <?= Html::a('Start', ['about'], ['class' => 'btn btn-info promo__button is-blue']) ?>
+                <?= Html::a('About this tool', ['about'], ['class' => 'btn btn-info promo__button is-blue']) ?>
             </div>
         </div>
     </div>    

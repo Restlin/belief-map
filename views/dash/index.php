@@ -18,8 +18,15 @@
             <div id="header-navbar-collapse" class="collapse navbar-collapse">
             <ul id="w1" class="navbar-nav nav"><li class="nav-item"><a class="nav-link" href="/web/index.php?r=site%2Findex" style="color: #fff">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="/web/index.php?r=site%2Fhelp" style="color: #fff">Help</a></li>
-            <li><form class="form-inline" action="/web/index.php?r=site%2Flogout" method="post">
-            <input type="hidden" name="_csrf" value="kcuToe_ZafB_cTlRRhBluMTMAWxH2wB8YU_c3wavgDWkv8HX3bEvlzYdYTkQZQH-no5RMzKUdgxZH62wQp3VQg=="><button type="submit" class="logout-btn"><span style="color: #fff">Logout</span></button></form></li></ul></div>
+            <li> 
+                <a href="#" class="profile-link">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 12.7188C13.468 12.7188 15.4688 10.718 15.4688 8.25C15.4688 5.78198 13.468 3.78125 11 3.78125C8.53198 3.78125 6.53125 5.78198 6.53125 8.25C6.53125 10.718 8.53198 12.7188 11 12.7188Z" stroke="#0E2F4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.78125 19.5938C3.78125 16.1562 6.53125 12.7188 11 12.7188C15.4688 12.7188 18.2188 16.1562 18.2188 19.5938" stroke="#0E2F4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <form class="form-inline" action="/web/index.php?r=site%2Flogout" method="post">
+                    <input type="hidden" name="_csrf" value="kcuToe_ZafB_cTlRRhBluMTMAWxH2wB8YU_c3wavgDWkv8HX3bEvlzYdYTkQZQH-no5RMzKUdgxZH62wQp3VQg=="><button type="submit" class="logout-btn"><span style="color: #fff">Logout</span></button></form></li></ul></div>
             </div>
         </nav>
     </header>
