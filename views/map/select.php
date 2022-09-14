@@ -71,18 +71,19 @@ $axisWidth = 75 * $model->size + 25;
             <div class="about-tool__title">The tool</div>
             <div class="about-tool__text">
                 <div class="about-tool__row">
-                    <p>Please complete the information below to populate the tool with knowledge about your payer stakeholders:</p>
+                    <p>Please complete the information below to populate the tool with knowledge about your payer stakeholders:<br>
                     <span> 1. Stakeholder initials - Please type in or choose initials of each payer</span>
+                    </p>
                 </div>
                 <div class="about-tool__row">
-                    <p>Answer two key customer questions</p>
-                    <span>2. Current Belief - Use dropdown menu to choose appropriate Belief</span>
-                    <span>3. Current Practice - Use dropdown menu to choose appropriate Practice</span>
+                    <p>Answer two key customer questions
+                        <br><span>2. Current Belief - Use dropdown menu to choose appropriate Belief</span><span>3. Current Practice - Use dropdown menu to choose appropriate Practice</span>
+                    </p>
                 </div>
                 <div class="about-tool__row">
                     <p>The tool automatically classifies your payer’s starting position on the tool<br>A highlighted box will appear on the map to indicate current chosen position for selected Stakeholder initials</p>
                     <span>4. Explore the suggested Belief/Practice shifts for current stakeholder and the appropriate messages for the next Shift by clicking ‘Submit’ </span>
-                    <span>5. Read through the messages that will support the suggested shift and click on ‘Resources’ to see which information sources can be used to build       engagement content for your payer6. At the bottom of the screen, select ‘Next customer’ to repeat the process for additional payers. Select ‘Finish’ when you have entered information for all your payer</span>
+                    <span>5. Read through the messages that will support the suggested shift and click on ‘Resources’ to see which information sources can be used to build       engagement content for your payer </span><span>6. At the bottom of the screen, select ‘Next customer’ to repeat the process for additional payers. Select ‘Finish’ when you have entered information for all your payer</span>
                 </div>
             </div>
         </div>

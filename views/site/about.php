@@ -26,7 +26,7 @@ $this->params['breadcrumbs'][] = ['label' => null, 'template' => ""];
                                 <li>Supporting resources for engagement</li>
                                 <li>Measurement of engegement with customers</li>
                             </ol>
-                        </div>
+                        </div>
                     </div>
                     <div class="about-page__right">
                         <div class="about-page__caption">Belief Map Framework</div>
@@ -47,13 +47,12 @@ $this->params['breadcrumbs'][] = ['label' => null, 'template' => ""];
 
             <div class="about-page__row">
                 <div class="about-page__title">Compliance</div>
-                <div class="about-page__text">
+                <div class="about-page__text is-accent">
                     <p>The tool and supporting materials have all been approved at Global team level. You will need to ensure they comply with your local regulations.</p>
 
                     <p>For GDPR purposes, only stakeholder initials only can be used for the diagnostic. The tool does not collect or store any other information about stakeholders without their consent.</p>
 
-                    <p>Information held is stored securely on the our company system and is made available only to those who need it to perform their roles. </p>
-                    <p>Information should be deleted when it is no longer required for the purpose of negotiation.
+                    <p>Information held is stored securely on the our company system and is made available only to those who need it to perform their roles. <br> Information should be deleted when it is no longer required for the purpose of negotiation.
                     </p>
                 </div>
                 

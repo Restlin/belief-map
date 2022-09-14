@@ -17,7 +17,7 @@ if(($cellId = \Yii::$app->session->get('cellId'))) {
             <h1 class="res__title">Resources</h1>
             <div class="res__caption">
                 <p>Messages for each shift have been used to develop two specific resources for use with payers to help move their position on the map.</p>
-                <p>ou can access the supporting references and additional materials for help with your discussions by clicking on each shift below e.g. D3 – C3. </p>    
+                <p>ou can access the supporting references and additional materials for help with your discussions by clicking on each shift below <br> e.g. D3 – C3. </p>    
                 <p>This will bring up PowerPoint slides for each shift.  </p>
             </div>
         </div>

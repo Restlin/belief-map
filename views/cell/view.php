@@ -51,13 +51,13 @@ $empties = [];
                                 if($cellCode == $startCode) {                                    
                                     if($startCode[0] == $endCode[0]) {
                                         $arrowClass = 'arrow-select arrow-right';
-                                        $img = Html::img('images/arr.svg');
+                                        $img = Html::img('images/abr.svg');
                                     } elseif($startCode[1] == $endCode[1]) {
                                         $arrowClass = 'arrow-select arrow-top';
-                                        $img = Html::img('images/at.svg');
+                                        $img = Html::img('images/abt.svg');
                                     } else {
                                         $arrowClass = 'arrow-select arrow-right-top';
-                                        $img = Html::img('images/at1.svg');
+                                        $img = Html::img('images/abrt.svg');
                                     }
                                     $content .= Html::tag('div', $img, ['class' => $arrowClass]); //need correct arrow
                                 } elseif($cellCode == $endCode) {
@@ -108,13 +108,13 @@ $empties = [];
                                 if($cellCode == $startCode) {
                                     if($startCode[0] == $endCode[0]) {
                                         $arrowClass = 'arrow-select arrow-right';
-                                        $img = Html::img('images/arr.svg');
+                                        $img = Html::img('images/asr.svg');
                                     } elseif($startCode[1] == $endCode[1]) {
                                         $arrowClass = 'arrow-select arrow-top';
-                                        $img = Html::img('images/at.svg');
+                                        $img = Html::img('images/astr.svg');
                                     } else {
                                         $arrowClass = 'arrow-select arrow-right-top';
-                                        $img = Html::img('images/at1.svg');
+                                        $img = Html::img('images/ast.svg');
                                     }
                                     $content .= Html::tag('div', $img, ['class' => $arrowClass]); //need correct arrow
                                 } elseif($cellCode == $endCode) {
@@ -235,16 +235,17 @@ $empties = [];
                             <?=$shiftCell->content.$links ?>
 
                         </div>
-                        <div class="tool-info__actions">
-                            <?= Html::a('Messages', ['site/arguments'], ['class' => "btn btn-info tool-info__button", 'style' => 'background:#7F8DAF; border:0;opacity: 1 !important;']) ?>
-                            <fieldset>
-                                <legend>Supporting resources</legend>
-                                    <?= Html::a('Executive Summary', $summaryLink, ['class' => "btn btn-info tool-info__button $disSummary", 'style' => 'background-color: #C3D502; border:0;width: 190px;opacity: 1 !important;']) ?>
-                                    <?= Html::a('Detailed Presentation', $presentationLink, ['class' => "btn btn-info tool-info__button $disPresentation", 'style' => 'background-color: #C3D502; border:0;width: 190px;opacity: 1 !important;']) ?>
-                            </fieldset>
-                        </div>                    
-
                     </div>
+
+                    <div class="tool-info__actions">
+                        <?= Html::a('Messages', ['site/arguments'], ['class' => "btn btn-info tool-info__button"]) ?>
+                        <!-- <fieldset>
+                            <legend>Supporting resources</legend>
+                                
+                        </fieldset> -->
+                        <?= Html::a('Executive Summary', $summaryLink, ['class' => "btn btn-info tool-info__button $disSummary", 'style' => 'background-color: #C3D502; border:0;width: 190px;opacity: 1 !important;']) ?>
+                        <?= Html::a('Detailed Presentation', $presentationLink, ['class' => "btn btn-info tool-info__button $disPresentation", 'style' => 'background-color: #C3D502; border:0;width: 190px;opacity: 1 !important;']) ?>
+                    </div> 
                 </div>
                 <div class="tool-info__footer">
                     <div class="arguments-steps tool-info__steps is-large">
@@ -263,7 +264,7 @@ $empties = [];
 
         <div class="tool__footer">
             <div class="tool__actions">
-                <?= Html::a('Next customer', ['map/select', 'id' => $map->id], ['class' => 'btn btn-info tool__button is-blue', 'style' => 'background-color: #7F8DAF; border:0;']) ?>
+                <?= Html::a('Next customer', ['map/select', 'id' => $map->id], ['class' => 'btn btn-info tool__button is-blue']) ?>
                 <?= Html::a('Finish', ['site/index'], ['class' => 'btn btn-info tool__button ', 'style' => 'background-color: #c3d502; border:0;']) ?>
             </div>
                             
