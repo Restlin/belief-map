@@ -42,7 +42,7 @@ class Map extends \yii\db\ActiveRecord
         $sizes = self::getSizeList();
         return [
             [['name', 'question1_text', 'question2_text', 'size'], 'required'],
-            [['contactName'], 'required', 'on' => 'select', 'message' => 'required'],
+            [['contactName'], 'required', 'on' => 'select', 'message' => 'Required'],
             [['size'], 'integer'],
             [['size'], 'in', 'range' =>array_keys($sizes)],
             [['name', 'question1_text', 'question2_text', 'contactName'], 'string', 'max' => 200],
