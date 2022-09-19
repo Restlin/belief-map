@@ -36,16 +36,11 @@ $js = "$('#map-question1, #map-question2').on('change', function() {
             $('.cell').removeClass('selected');
             if(cell) {                
                 result = 'submit to '+ q1 + q2;
-                result = 'SUBMIT'; //from figma design
-                /*if(!contact) {
-                    // result = 'need select contact';
-                }
-                $('#btn-submit').prop('disabled', contact ? false : true);
-                */
+                result = 'SUBMIT'; //from figma design                
                 $('#btn-submit').prop('disabled', false);
                 $('.cell[data-code='+q1 + q2 +']').addClass('selected');
             } else {
-                result = 'N/A';
+                result = 'Not Applicable';                
                 $('#btn-submit').prop('disabled', true);
             }
         } else {
@@ -53,7 +48,7 @@ $js = "$('#map-question1, #map-question2').on('change', function() {
             $('#btn-submit').prop('disabled', true);
         }
         //result = 'SUBMIT'; //from figma design
-        // $('#btn-submit').text(result);
+        $('#btn-submit').text(result);
     }).change();"
     ;
 $this->registerJs($js);
@@ -94,14 +89,7 @@ $axisWidth = 75 * $model->size + 25;
                     <div class="map-form__grid">
                         <div class="map-form__main">
                             <?php $form = ActiveForm::begin(); ?> 
-
-                            <?php
-                                if($isAdmin) {
-                                    echo $form->field($model, 'intro')->textArea(['maxwidth' => 2000])->label('edit only by admins');
-                                } else {
-                                    //echo Html::tag('p', $model->intro);
-                                }
-                            ?>
+                            
                             <?= $form->field($model, 'contactName')->widget(Select2::class, [
                                 'data' => $contacts,
                                 'options' => ['placeholder' => 'Insert or select  contact ...'],
@@ -171,7 +159,7 @@ $axisWidth = 75 * $model->size + 25;
         </div>
 
         <div class="about-tool__note"><strong>PLEASE NOTE</strong>
-            Some Belief/Practice combinations are not realistic - if you see ‘N/A’ please choose different combination of chosen answers
+            Some Belief/Practice combinations are not realistic - if you see ‘Not Applicable’ please choose different combination of chosen answers
         </div>
     </div>
 </div>
