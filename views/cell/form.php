@@ -2,7 +2,8 @@
 
 use yii\helpers\Html;
 use kartik\color\ColorInput;
-use dosamigos\ckeditor\CKEditor;
+//use dosamigos\ckeditor\CKEditor;
+use mihaildev\ckeditor\CKEditor;
 use yii\bootstrap4\ActiveForm;
 use yii\bootstrap4\Modal;
 use yii\helpers\Url;
@@ -49,7 +50,10 @@ $this->registerJs($js);
         
         <?= $form->field($model, 'content')->widget(CKeditor::class, [
             'options' => ['rows' => 8],
-            'preset' => 'full'
+            'editorOptions' => [
+                'preset' => 'full', //разработанны стандартные настройки basic, standard, full данную возможность не обязательно использовать
+                'inline' => false, //по умолчанию false
+            ],            
         ]) ?>
         
         <?= $form->field($model, 'links')->textArea(['maxlength' => '4000'])->hint('Use space as separator between links') ?>
