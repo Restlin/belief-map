@@ -4390,13 +4390,14 @@ parent .legend {
     background: #fff !important;
 }
 
-/* .dropdown-item.active{
-    width: calc(100% + 2px);
-    background: inherit;
-    border: 0.5px solid #0E2F4A;
+ .dropdown-item:hover{
+    /* width: calc(100% + 2px); */
+    color: #0E2F4A !important;
+    background: #9DA9C1 !important;
+    /* border: 0.5px solid #0E2F4A; */
     border-radius: 5px;
-    margin: -1px;
-} */
+    /* margin: -1px; */
+} 
 
 .dropdown-toggle::after{
     border: 0;

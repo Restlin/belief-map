@@ -111,10 +111,10 @@ $empties = [];
                                         $img = Html::img('images/asr.svg');
                                     } elseif($startCode[1] == $endCode[1]) {
                                         $arrowClass = 'arrow-select arrow-top';
-                                        $img = Html::img('images/astr.svg');
+                                        $img = Html::img('images/ast.svg');
                                     } else {
                                         $arrowClass = 'arrow-select arrow-right-top';
-                                        $img = Html::img('images/ast.svg');
+                                        $img = Html::img('images/astr.svg');
                                     }
                                     $content .= Html::tag('div', $img, ['class' => $arrowClass]); //need correct arrow
                                 } elseif($cellCode == $endCode) {

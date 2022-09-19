@@ -18,9 +18,11 @@ $this->params['breadcrumbs'][] = ['label' => null, 'template' => ""];
                     <div class="about-page__left">
                         <div class="about-page__title">About this tool</div>
                         <div class="about-page__text">
-                            <p>The tool has five components:<br> A diagnostic that allows you to map the current beliefs, behaviours and practice of a target stakeholder.</p>
+                            <p>The tool has five components</p>
+                            <br>
 
                             <ol>
+                                <li>A diagnostic that allows you to map the current beliefs, behaviours and practice of a target stakeholder.</li>
                                 <li>A belief map that recommends the next best belief, behaviour or practice shift for that stakeholder
                                 <li>Recommended messages to enable that shift </li>
                                 <li>Supporting resources for engagement</li>
@@ -52,7 +54,7 @@ $this->params['breadcrumbs'][] = ['label' => null, 'template' => ""];
 
                     <p>For GDPR purposes, only stakeholder initials only can be used for the diagnostic. The tool does not collect or store any other information about stakeholders without their consent.</p>
 
-                    <p>Information held is stored securely on the our company system and is made available only to those who need it to perform their roles. <br> Information should be deleted when it is no longer required for the purpose of negotiation.
+                    <p>Information held is stored securely on our company system and is made available only to those who need it to perform their roles. <br> Information should be deleted when it is no longer required for the purpose of negotiation.
                     </p>
                 </div>
                 
