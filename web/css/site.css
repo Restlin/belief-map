@@ -4341,6 +4341,7 @@ parent .legend {
     line-height: 18px;
     color: #0E2F4A;
     margin-bottom: 15px;
+    text-transform: none;
 }
 
 .map-form__grid.is-revert .map-form__instruction ul{
@@ -4502,6 +4503,7 @@ parent .legend {
     font-size: 25px;
     line-height: 20px;
     color: #0E2F4A;
+    text-transform: none;
 }
 
 @media (max-width: 1400px){
