@@ -35,8 +35,10 @@ $js = "$(function(){
     });";
 $this->registerJs($js);
 ?>
-<div class="map-report">
+<div class="map-report is-short">
+    
     <div class="map-form">
+        <h2 class="map-report__title">Progress dashboard</h2>
         <div class="map-form__grid is-revert">
             <div class="map-preview map-form__aside">
                 <div class="map-form__instruction">

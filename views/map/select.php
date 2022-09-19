@@ -114,6 +114,8 @@ $axisWidth = 75 * $model->size + 25;
                                 ],
                             ])->label('CURRENT PRACTICE') ?>
 
+                            <div class="red-error">There are no more shift as you have successful achieved the end goal</div>
+
                             <div class="form-group">
                                 <?= Html::submitButton('Submit', ['class' => 'btn btn-info', 'id' => 'btn-submit', /*'disabled' => true*/]) ?>
                             </div>
