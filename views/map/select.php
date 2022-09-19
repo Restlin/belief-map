@@ -31,16 +31,21 @@ $js = "$('#map-question1, #map-question2').on('change', function() {
         //let contact = $('#map-contactname').val();
         //console.log(contact);
         let result = '';
+        $('.red-error').hide();
         if(q1 && q2) {
             cell = cellCodes[q1+q2] ? cellCodes[q1+q2] : null;
-            $('.cell').removeClass('selected');
-            if(cell) {                
+            $('.cell').removeClass('selected');            
+            if(q1+q2 == 'A1') {
+                $('.red-error').show();
+                result = 'SUBMIT';
+                $('#btn-submit').prop('disabled', true);
+            } else if(cell) {
                 result = 'submit to '+ q1 + q2;
                 result = 'SUBMIT'; //from figma design                
                 $('#btn-submit').prop('disabled', false);
                 $('.cell[data-code='+q1 + q2 +']').addClass('selected');
             } else {
-                result = 'Not Applicable';                
+                result = 'Not Applicable';
                 $('#btn-submit').prop('disabled', true);
             }
         } else {
