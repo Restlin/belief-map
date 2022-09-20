@@ -37,6 +37,7 @@ $js = "$('#map-question1, #map-question2').on('change', function() {
             $('.cell').removeClass('selected');            
             if(q1+q2 == 'A1') {
                 $('.red-error').show();
+                $('.cell[data-code='+q1 + q2 +']').addClass('selected');
                 result = 'SUBMIT';
                 $('#btn-submit').prop('disabled', true);
             } else if(cell) {
