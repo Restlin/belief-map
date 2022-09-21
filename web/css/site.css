@@ -5424,6 +5424,7 @@ parent .legend {
     }
 }
 .logo img {
+    margin-top: -10px;
     max-width: 179px;
     max-height: 42px;
 }
