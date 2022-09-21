@@ -63,6 +63,9 @@ $toolUrl = $this->context->id == 'cell' && $this->context->action->id == 'view' 
 <?php $this->beginBody() ?>
 
 <header class="page-header">
+    <a href="/" class="logo">
+        <img src="/web/images/logo.png" alt="">
+    </a>
     <?php    
     NavBar::begin([
         'brandLabel' => $brandLabel,
