@@ -30,20 +30,20 @@ if(Yii::$app->user->isGuest) {
     $product = Yii::$app->user->identity->product;
     
 }
-$companyImg = '';
+$companyIcon = false;
 if($company) {    
     $brandColor = $company->getColor();    
     $textColor = $company->color_text;
     $brandLabel = Html::tag('span', $company->name, ['style' => "color: $textColor; font-size: 22px;"]);
     if($company->icon) {
-        $companyImg = Html::img($company->icon, ['class' => 'user-img', 'alt' => 'company icon']);        
+        $companyIcon = $company->icon;
     }
 } else {
     $brandColor = Company::DEFAULT_COLOR;    
     $textColor = '#fff';
-    $brandLabel = Html::tag('span', Yii::$app->name, ['style' => "color: $textColor; font-size: 22px;"]);
-    $companyImg = Html::img('images/banner.png', ['class' => 'user-img', 'alt' => 'company icon']);        
+    $brandLabel = Html::tag('span', Yii::$app->name, ['style' => "color: $textColor; font-size: 22px;"]);    
 }
+
 
 $mapId = 1;
 $viewUrl = ['cell/view'] + $this->context->actionParams;
@@ -63,12 +63,11 @@ $toolUrl = $this->context->id == 'cell' && $this->context->action->id == 'view' 
 <?php $this->beginBody() ?>
 
 <header class="page-header">
-    <a href="/" class="logo">
-        <img src="/web/images/logo.png" alt="">
-    </a>
     <?php    
     NavBar::begin([
         'brandLabel' => $brandLabel,
+        'brandImage' => $companyIcon,
+        'brandOptions' => ['class' => 'logo'],
         'id' => 'header-navbar',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
@@ -83,13 +82,6 @@ $toolUrl = $this->context->id == 'cell' && $this->context->action->id == 'view' 
         'options' => ['class' => 'navbar-nav'],
         'encodeLabels' => false,
         'items' => [
-            /*[
-                'label' => $companyImg.$brandLabel, 
-                'url' => false,
-                'encodeLabels' => false,
-                'options' => ['style' => "background: $brandColor"],
-            ],*/            
-
             ['label' => 'Home', 'url' => ['/site/index'], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
             ['label' => 'About the tool', 'url' => ['/site/about'], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],
             ['label' => 'How to use this tool', 'url' => ['/site/use'], 'visible' => $type !== 'guest', 'linkOptions' => ['style' => "color: $textColor"]],

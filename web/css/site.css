@@ -5423,6 +5423,9 @@ parent .legend {
         margin-bottom: 30px;
     }
 }
-
+.logo img {
+    max-width: 179px;
+    max-height: 42px;
+}
 
 
