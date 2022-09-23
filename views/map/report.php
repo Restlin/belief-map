@@ -49,7 +49,7 @@ $this->registerJs($js);
                         <li>This can be used both for individual stakeholders or to provide an overview of the journey for all stakeholders.  </li>
                         <li>The numbers in the circles on the grid indicate the total number of stakeholders at that position</li>
                         <li>The grid displays the position of your stakeholders at a point in time. You can filter the list underneath to look at the shifts for one particular stakeholder over time</li>
-                        <li>You can also control entries by deleting dublicate or incorrect entries</li>
+                        <li>You can also control entries by deleting duplicate or incorrect entries</li>
                     </ul>
                 </div>
                 <div class="map-preview__map">

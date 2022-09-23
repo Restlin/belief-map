@@ -26,22 +26,22 @@ $this->params['breadcrumbs'][] = ['label' => null, 'template' => ""];
                                 <li>A belief map that recommends the next best belief, behaviour or practice shift for that stakeholder
                                 <li>Recommended messages to enable that shift </li>
                                 <li>Supporting resources for engagement</li>
-                                <li>Measurement of engegement with customers</li>
+                                <li>Measurement of engagement with customers</li>
                             </ol>
                         </div>
                     </div>
                     <div class="about-page__right">
                         <div class="about-page__caption">Belief Map Framework</div>
 
-                        <?= Html::img('images/img1.png', ['class' => "about-page__img"]) ?>
+                        <?= Html::img('images/abt2.png', ['class' => "about-page__img is-shadow"]) ?>
                     </div>
                 </div>
 
                 <div class="about-page__footer">
                     <div class="about-page__text">
-                        <p>The belief map has an Y axis that outlines a series of different stakeholder beliefs (e.g. payer belief), while the X axis indicates various stakeholder practices/ behaviours (e.g. approaches to reimbursement and funding). These have been agreed in advance of developing your tool.
+                        <p>The belief map has a Y axis that outlines a series of different stakeholder beliefs (e.g. payer belief), while the X axis indicates various stakeholder practices/ behaviours (e.g. approaches to reimbursement and funding). These have been agreed in advance of developing your tool.
                         </p>
-                        <p>By diagnosing and mapping the current beleif and practices or behaviours, the tool provides a pathway for progressive customer engagament</p>
+                        <p>By diagnosing and mapping the current belief and practices or behaviours, the tool provides a pathway for progressive customer engagement</p>
                     </div>
                 </div>
                 

@@ -4506,6 +4506,12 @@ parent .legend {
     text-transform: none;
 }
 
+.about-page__img.is-shadow{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
 @media (max-width: 1400px){
     .shift-content{
         width: 65%;
