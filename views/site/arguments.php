@@ -25,7 +25,7 @@ $link2 = Html::a('Resources', ['resources'], ['class' => 'btn btn-info is-blue a
                     <div class="arguments-card__left">
                         <?=Html::img("images/m1.png", ['class' => "arguments-card__img"]) ?>
                         <div class="arguments-card__text">
-                            <p>The disease is a rare, progressive disorder that can be life threatening Treatment with the current SoC, provides   limited effect and iassociated treatment related adverse events, which impacts the patients QoL There is a need for a new therapy that addresses these unmet needs</p>
+                            <p>The disease is a rare, progressive disorder that can be life threatening. Treatment with the current SoC, provides limited effect and is associated with treatment related adverse events, which impacts the patients' QoL. There is a need for a new therapy that addresses these unmet needs.</p>
                         </div>
                         <div class="arguments-card__actions">
                             <?= $link1 ?>
@@ -43,7 +43,7 @@ $link2 = Html::a('Resources', ['resources'], ['class' => 'btn btn-info is-blue a
                     <div class="arguments-card__left">
                         <?=Html::img("images/m3.png", ['class' => "arguments-card__img"]) ?>
                         <div class="arguments-card__text">
-                            <p>Product X provides an effective treatment option for the management of the disease over the current SoC-improvement in treatment related adverse events and improvement of patients’ QoL</p>
+                            <p>Product X provides an effective treatment option for the management of the disease over the current SoC-improvement in treatment related adverse events and improvement of patients’ QoL.</p>
                         </div>
                         <div class="arguments-card__actions">
                             <?= $link1 ?>
@@ -61,7 +61,7 @@ $link2 = Html::a('Resources', ['resources'], ['class' => 'btn btn-info is-blue a
                     <div class="arguments-card__left">
                         <?=Html::img("images/m5.png", ['class' => "arguments-card__img"]) ?>
                         <div class="arguments-card__text">
-                            <p>Product X reduces the costs hospitalization associated with treatment related adverse events, experienced with the SoC. It has a predictable budget impact and is a cost- effective treatment option for the management of the disease</p>
+                            <p>Product X reduces the costs hospitalization associated with treatment related adverse events, experienced with the SoC. It has a predictable budget impact and is a cost- effective treatment option for the management of the disease.</p>
                         </div>
                         <div class="arguments-card__actions">
                             <?= $link1 ?>

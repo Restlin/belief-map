@@ -18,11 +18,11 @@ $this->params['breadcrumbs'][] = ['label' => null, 'template' => ""];
                     <div class="about-page__left">
                         <div class="about-page__title">About this tool</div>
                         <div class="about-page__text">
-                            <p>The tool has five components</p>
+                            <p>The tool has five components:</p>
                             <br>
 
                             <ol>
-                                <li>A diagnostic that allows you to map the current beliefs, behaviours and practice of a target stakeholder.</li>
+                                <li>A diagnostic that allows you to map the current beliefs, behaviours and practice of a target stakeholder</li>
                                 <li>A belief map that recommends the next best belief, behaviour or practice shift for that stakeholder
                                 <li>Recommended messages to enable that shift </li>
                                 <li>Supporting resources for engagement</li>
@@ -41,7 +41,7 @@ $this->params['breadcrumbs'][] = ['label' => null, 'template' => ""];
                     <div class="about-page__text">
                         <p>The belief map has a Y axis that outlines a series of different stakeholder beliefs (e.g. payer belief), while the X axis indicates various stakeholder practices/ behaviours (e.g. approaches to reimbursement and funding). These have been agreed in advance of developing your tool.
                         </p>
-                        <p>By diagnosing and mapping the current belief and practices or behaviours, the tool provides a pathway for progressive customer engagement</p>
+                        <p>By diagnosing and mapping the current belief and practices or behaviours, the tool provides a pathway for progressive customer engagement.</p>
                     </div>
                 </div>
                 
