@@ -28,7 +28,7 @@ $this->params['breadcrumbs'][] = ['label' => null, 'template' => ""];
                      </p>
                 </div>
                 <div class="promo__right">
-                    <img src="images/informer.jpg" alt="">
+                    <img src="images/h11.jpg" alt="">
                 </div>
             </div>
 

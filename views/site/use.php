@@ -28,7 +28,7 @@
                 </div>
 
 
-                <?= Html::a('Continue', ['map/select', 'id' => $mapId], ['class' => 'btn btn-info about-page__button is-margin is-blue']) ?>
+                <?= Html::a('Submit', ['map/select', 'id' => $mapId], ['class' => 'btn btn-info about-page__button is-margin is-blue']) ?>
                 
             </div>
         </div>
