@@ -31,7 +31,7 @@ $this->params['breadcrumbs'][] = ['label' => null, 'template' => ""];
                         </div>
                     </div>
                     <div class="about-page__right">
-                        <div class="about-page__caption">Belief Map Framework</div>
+                        <!-- <div class="about-page__caption">Belief Map Framework</div> -->
 
                         <?= Html::img('images/abtsh.png', ['class' => "about-page__img is-shadow"]) ?>
                     </div>
