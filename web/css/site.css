@@ -4694,13 +4694,14 @@ parent .legend {
     height: 39px;
 }
 
-.select2-container--krajee-bs4 .select2-results__option--highlighted[aria-selected="true"]::after{
+/* .select2-container--krajee-bs4 .select2-results__option--highlighted[aria-selected="true"]::after{
     content: '*Select';
     display: block;
     font-size: 12px;
     color: #000;
     margin-left: auto;
-}
+    padding-left: 20px;
+} */
 
 @media (max-width: 1400px){
     .shift-content{
@@ -5635,7 +5636,7 @@ parent .legend {
 }
 .logo img {
     margin-top: -10px;
-    max-width: 179px;
+    max-width: 120px;
     max-height: 42px;
 }
 

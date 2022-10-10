@@ -40,8 +40,9 @@ if($company) {
     }
 } else {
     $brandColor = Company::DEFAULT_COLOR;    
-    $textColor = '#fff';
-    $brandLabel = Html::tag('span', Yii::$app->name, ['style' => "color: $textColor; font-size: 22px;"]);    
+    $textColor = '#0E2F4A';
+    $brandLabel = Html::tag('span', 'Belief Shift Transition (BeST)', ['style' => "color: $textColor; font-size: 22px;font-weight: 600;font-family: 'Hellix';"]);    
+    // $brandLabel = Html::tag('span', Yii::$app->name, ['style' => "color: $textColor; font-size: 22px;"]);    
 }
 
 

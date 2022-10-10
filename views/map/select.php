@@ -82,8 +82,8 @@ $axisWidth = 75 * $model->size + 25;
                     </p>
                 </div>
                 <div class="about-tool__row">
-                    <p>The tool automatically classifies your payer’s starting position on the tool<br>A highlighted box will appear on the map to indicate current chosen position for selected Stakeholder initials</p>
-                    <span>4. Explore the suggested Belief/Practice shifts for current stakeholder and the appropriate messages for the next Shift by clicking ‘Submit’ </span>
+                    <p>The tool automatically classifies your payer’s starting position on the tool<br>A highlighted box will appear on the map to indicate the current chosen position for the selected Stakeholder initials</p>
+                    <span>4. Explore the suggested Belief/Practice shifts for the current stakeholder and the appropriate messages for the next Shift by clicking ‘Submit’ </span>
                     <span>5. Read through the messages that will support the suggested shift and click on ‘Resources’ to see which information sources can be used to build       engagement content for your payer </span><span>6. At the bottom of the screen, select ‘Next customer’ to repeat the process for additional payers. Select ‘Finish’ when you have entered information for all your payers</span>
                 </div>
             </div>
