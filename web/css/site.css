@@ -4694,6 +4694,14 @@ parent .legend {
     height: 39px;
 }
 
+.select2-container--krajee-bs4 .select2-results__option--highlighted[aria-selected="true"]::after{
+    content: '*Select';
+    display: block;
+    font-size: 12px;
+    color: #000;
+    margin-left: auto;
+}
+
 @media (max-width: 1400px){
     .shift-content{
         width: 65%;

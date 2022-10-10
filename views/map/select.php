@@ -100,7 +100,7 @@ $axisWidth = 75 * $model->size + 25;
                                 'data' => $contacts,
                                 'options' => ['placeholder' => 'Insert or select  contact ...'],
                                 'pluginOptions' => [
-                                    'tags' => true                
+                                    'tags' => true          
                                 ],
                             ]); ?>
 

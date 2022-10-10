@@ -14,7 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="res-card is-column">
                 <div class="res-card__title">A range of additional materials are available to support your discussions with payers.​<br>Please note local compliance and approval must be obtained before external use of any of the materials in part or whole.
                 </div>
-                <?=Html::img('images/r15.png', ['class' => 'res-card__img']) ?>
+                <?=Html::img('images/res6res.png', ['class' => 'res-card__img']) ?>
             </div>
 
            

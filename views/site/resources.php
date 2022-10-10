@@ -85,7 +85,7 @@ if(($cellId = \Yii::$app->session->get('cellId'))) {
                     </div>
                     <div class="res-card__aside">
                         <div class="res-card__img">
-                            <?= Html::img('images/r11.png') ?>
+                            <?= Html::img('images/res3res.png') ?>
                         </div>
                     </div>
                 </div>
@@ -153,7 +153,7 @@ if(($cellId = \Yii::$app->session->get('cellId'))) {
                     </div>
                     <div class="res-card__aside">
                         <div class="res-card__img">
-                            <?= Html::img('images/r2.jpg') ?>
+                            <?= Html::img('images/res4res.png') ?>
                         </div>
                     </div>
                 </div>
