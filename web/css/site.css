@@ -4026,7 +4026,12 @@ parent .legend {
     margin-bottom: 0;
 }
 .about-page__img{
-    max-width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.about-page__right{
+    display: flex;
+    justify-content: center;
 }
 .about-page__caption{
     margin-left: auto;
